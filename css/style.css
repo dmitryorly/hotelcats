@@ -71,6 +71,42 @@ body{
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
+  color: #1A212F;
+}
+
+a{
+  text-decoration: none;
+  color: #1A212F;
+}
+
+.wrapper{
+  max-width: 1170px;
+  padding: 0 98px;
+  margin: 0 auto;
 }
 
 /* GLOBAL STYLES END */
+
+/* HEADER STYLES START */
+
+.header__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.header__menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item{
+  margin-right: 30px;
+}
+
+.menu__item:last-child{
+  margin-right: 0;
+}
+/* HEADER STYLES END */
