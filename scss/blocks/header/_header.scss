@@ -1,26 +1,30 @@
-.header__wrapper{
+.header {
+  &__wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
   }
-  
-  .header__menu{
+
+  &__menu{
     display: flex;
     flex-wrap: wrap;
   }
+}
   
-  .menu__item{
+  .menu {
+  &__item{
     margin-right: 30px;
   }
   
-  .menu__item:last-child{
+  &__item:last-child{
     margin-right: 0;
   }
   
-  .menu__link{
+  &__link{
     font-weight: 600;
     line-height: 19px;
   }
+}
   
