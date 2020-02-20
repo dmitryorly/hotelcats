@@ -1,0 +1,11 @@
+.wrapper{
+    max-width: 1366px;
+    padding: 0 98px;
+    margin: 0 auto;
+    &_full
+    {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    }
+  }

@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: 1366px;
+  padding: 0 98px;
+  margin: 0 auto;
+}
+
+.wrapper_full {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */
