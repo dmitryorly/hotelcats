@@ -358,9 +358,9 @@ a{
 
 }
 
-.slider__slide-buttons{
-  /* margin-left: 555px; */
-}
+/* .slider__slide-buttons{
+  margin-left: 555px;
+} */
 
 .slider__slide-button{
   display: inline-flex;
