@@ -1,0 +1,20 @@
+.slider{
+  &__slide{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.slide{
+  &__card{
+    width: 500px;
+    height: 284px;
+    padding: 40px 100px;
+    margin: 60px 0;
+   /*  position: absolute;
+    top: 0;
+    left: 530px;
+    z-index: 2; */
+
+  }
+}
