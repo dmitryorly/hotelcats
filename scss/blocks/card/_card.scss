@@ -1,0 +1,20 @@
+.card{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+  z-index: 1;
+  &__title{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+  }
+  &__subtitle{
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 306px;
+  }
+  &__pic{
+    margin-bottom: 28px;
+  }
+}
