@@ -1,3 +1,10 @@
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 99;
+}
 .header, .footer {
   &__wrapper{
     display: flex;
