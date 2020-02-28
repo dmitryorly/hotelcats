@@ -1,4 +1,4 @@
-.header {
+.header, .footer {
   &__wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -27,4 +27,13 @@
     line-height: 19px;
   }
 }
-  
+
+.copyright{
+  border-top: 1px solid #EFEFEF;
+  padding: 10px 0;
+  &-text{
+    font-size: 12px;
+    line-height: 14px;
+    color: #8F8F8F;
+  }
+}
