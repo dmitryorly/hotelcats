@@ -1,7 +1,58 @@
 .slider{
+  max-width: 1030px;
+  margin: 0 auto;
   &__slide{
     display: flex;
     flex-wrap: nowrap;
+    position: relative;
+  }
+  &__controls{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__indicators{
+    display: inline-flex;
+  }
+  &__indicator{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: $circle;
+    margin-right: 12px;
+    cursor: pointer;
+    &_active{
+      background-color: $circle-active;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover{
+      box-shadow:  0px 2px 12px rgba(173, 152, 143, 0.5);
+      opacity: .75;
+    }
+  }
+  &__nav-buttons{
+    margin-left: 400px;
+  }
+  &__nav-button{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    box-shadow:  0px 2px 12px rgba(173, 152, 143, 0.25);
+    background-color: #fff;
+    padding: 0;
+    margin-right: 10px;
+    transition: 0.2s;
+    &:hover{
+      box-shadow:  0px 2px 12px rgba(173, 152, 143, 0.5);
+    }
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }
 
@@ -9,12 +60,25 @@
   &__card{
     width: 500px;
     height: 284px;
-    padding: 40px 100px;
+    padding: 34px 100px;
     margin: 60px 0;
-   /*  position: absolute;
+   position: absolute;
     top: 0;
     left: 530px;
-    z-index: 2; */
-
+    z-index: 2;
   }
+    &__pic{
+      border-radius: 10px;
+    }
+    &__tariff{
+      margin-bottom: 20px;
+    }
+}
+
+
+
+.button__img{
+  position: absolute;
+  top: 14px;
+  left: 14px;
 }

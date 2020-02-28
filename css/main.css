@@ -98,10 +98,148 @@ html {
   line-height: 140%;
 }
 
-.card__subtitle {
+.card__text {
   font-size: 16px;
   line-height: 140%;
   max-width: 306px;
+}
+
+.card__list-item {
+  margin-bottom: 14px;
+}
+
+.card__list-item:last-child {
+  margin-bottom: 27px;
+}
+
+/* Maybe I should replace LIST to a independent block */
+.list__item {
+  font-family: Lato;
+  line-height: 19px;
+  padding-left: 21px;
+  position: relative;
+}
+
+.list__item::before {
+  content: '';
+  display: block;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: #FAC663;
+  position: absolute;
+  top: calc(50% - 6.5px);
+  left: 0;
+}
+
+/* SLIDER */
+.slider {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+}
+
+.slider__controls {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.slider__indicators {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.slider__indicator {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.slider__indicator_active {
+  background-color: #FAC663;
+}
+
+.slider__indicator:last-child {
+  margin-right: 0;
+}
+
+.slider__indicator:hover {
+  -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
+          box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
+  opacity: .75;
+}
+
+.slider__nav-buttons {
+  margin-left: 400px;
+}
+
+.slider__nav-button {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+          box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+  background-color: #fff;
+  padding: 0;
+  margin-right: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider__nav-button:hover {
+  -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
+          box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
+}
+
+.slider__nav-button:last-child {
+  margin-right: 0;
+}
+
+.slide__card {
+  width: 500px;
+  height: 284px;
+  padding: 34px 100px;
+  margin: 60px 0;
+  position: absolute;
+  top: 0;
+  left: 530px;
+  z-index: 2;
+}
+
+.slide__pic {
+  border-radius: 10px;
+}
+
+.slide__tariff {
+  margin-bottom: 20px;
+}
+
+.button__img {
+  position: absolute;
+  top: 14px;
+  left: 14px;
 }
 
 /*HEADER*/
@@ -225,5 +363,146 @@ html {
 
 .about__card-pic {
   margin-bottom: 28px;
+}
+
+/* ROOMS */
+.rooms {
+  margin-bottom: 140px;
+  background: url("../img/svg/fish-bg.svg") no-repeat top left 100px;
+}
+
+.rooms__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* REVIEW */
+.review {
+  margin-bottom: 140px;
+  overflow-x: hidden;
+}
+
+.review__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.review__card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 470px;
+  height: 206px;
+  padding: 35px 35px 70px 70px;
+  margin-right: 30px;
+}
+
+.review__card-1 {
+  left: 500px;
+}
+
+.review__card-2 {
+  left: 1000px;
+}
+
+.review__text {
+  font-size: 16px;
+}
+
+.review__author, .review__date {
+  font-size: 14px;
+  color: #848484;
+}
+
+.review__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.reviews {
+  margin-bottom: 206px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* CONTACTS */
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.contacts__title {
+  margin-bottom: 50px;
+}
+
+.contacts__info {
+  background-color: #FAC663;
+  padding: 70px 100px 70px 198px;
+  max-width: 568px;
+  max-height: 580px;
+}
+
+.contacts__subtitle {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.contacts__text {
+  font-weight: normal;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+
+.contacts__link {
+  display: block;
+}
+
+.contacts__map {
+  position: relative;
+  overflow: hidden;
+}
+
+.contacts-map {
+  width: 100%;
+  height: 100%;
+}
+
+.social-link {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.social-link-fb {
+  background-image: url("/img/svg/social-fb-icon.svg");
+}
+
+.social-link-inst {
+  background-image: url("/img/svg/social-inst-icon.svg");
+}
+
+.social-link-vk {
+  background-image: url("/img/svg/social-vk-icon.svg");
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,9 +9,37 @@
     font-size: 22px;
     line-height: 140%;
   }
-  &__subtitle{
+  &__text{
     font-size: 16px;
     line-height: 140%;
     max-width: 306px;
+  }
+  &__list-item{
+    margin-bottom: 14px;
+    &:last-child{
+      margin-bottom: 27px;
+  }
+}
+}
+
+/* Maybe I should replace LIST to a independent block */
+
+.list{
+  &__item{
+    font-family: Lato;
+    line-height: 19px;
+    padding-left: 21px;
+    position: relative;
+    &::before{
+      content: '';
+      display: block;
+      height: 13px;
+      width: 13px;
+      border-radius: 50%;
+      background-color: #FAC663;
+      position: absolute;
+      top: calc(50% - 6.5px);
+      left: 0;
+    }
   }
 }

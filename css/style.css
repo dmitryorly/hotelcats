@@ -83,7 +83,7 @@ a{
 
 /* ROOMS STYLES START*/
 
-.rooms{
+/* .rooms{
   margin-bottom: 140px;
   background: url('../img/svg/fish-bg.svg') no-repeat top left 100px;
 }
@@ -91,9 +91,9 @@ a{
 .rooms__title{
   text-align: center;
   margin-bottom: 70px;
-}
+} */
 
-.slider__slide{
+/* .slider__slide{
   max-width: 1030px;
   width: 100%;
   margin: 0 auto;
@@ -158,11 +158,11 @@ a{
 
 .list__item:last-child{
   margin-bottom: 27px;
-}
+} */
 
   /* SLIDER CONTROLS STYLES START */
 
-.slider__control-panel{
+/* .slider__control-panel{
   max-width: 1030px;
   display: flex;
   flex-wrap: wrap;
@@ -175,7 +175,7 @@ a{
   margin-left: 555px;
 } */
 
-.slider__slide-button{
+/* .slider__slide-button{
   display: inline-flex;
   transition: 0.2s;
 }
@@ -211,7 +211,7 @@ a{
 
 .slide-buttons-next{
   display: none;
-}
+} */
 
   /* SLIDER CONTROLS STYLES END */
 
