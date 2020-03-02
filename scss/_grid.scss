@@ -1,11 +1,14 @@
 html{
     box-sizing: border-box;
-    // overflow-x: hidden;
   }
   
   *, *::before, *::after{
     box-sizing: inherit;
   }
+
+.main{
+  overflow: hidden;
+}
 
 .wrapper, .wrapper_full{
   max-width: 1366px;
@@ -14,7 +17,23 @@ html{
 }
 
 .wrapper{
+  position: relative;
   padding: 0 98px;
+}
+
+.bg{
+  &-paw{
+    position: absolute;
+    width: 367px;
+    height: 314px;
+    background:url('../img/svg/paw-bg.svg') no-repeat;
+  }
+  &-fish{
+    position: absolute;
+    width: 484px;
+    height: 151px;
+    background:url('../img/svg/fish-bg.svg') no-repeat;
+  }
 }
 
 /* .wrapper{

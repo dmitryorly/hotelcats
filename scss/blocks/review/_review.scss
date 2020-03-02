@@ -1,6 +1,10 @@
 .review{
   margin-bottom: 140px;
-  overflow-x: hidden;
+  &-bg{
+    right: -20px;
+    top: -90px;
+    transform: rotate(-45deg);
+  }
   &__title{
     text-align: center;
     margin-bottom: 70px;
