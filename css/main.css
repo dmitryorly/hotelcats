@@ -60,6 +60,20 @@ html {
           box-sizing: inherit;
 }
 
+body {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1A212F;
+}
+
+a {
+  text-decoration: none;
+  color: #1A212F;
+}
+
 .main {
   overflow: hidden;
 }
@@ -89,18 +103,56 @@ html {
   background: url("../img/svg/fish-bg.svg") no-repeat;
 }
 
-/* .wrapper{
-    max-width: 1366px;
-    padding: 0 98px;
-    margin: 0 auto;
+.title {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+}
 
-    &_full
-    {
-    width: 100%;
-    max-width: 1366px;
-    margin: 0 auto;
-    }
-  } */
+/* BUTTON */
+.button {
+  width: 206px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+          box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 10px 50px rgba(26, 33, 47, 0.1);
+          box-shadow: 0px 10px 50px rgba(26, 33, 47, 0.1);
+}
+
+.button__text {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button_white {
+  background: url("../img/svg/paw-icon-white.svg") no-repeat;
+  background-color: #fff;
+  background-position: 163px center;
+}
+
+.button_orange {
+  background: url("../img/svg/paw-icon-orange.svg") no-repeat;
+  background-color: #FF7236;
+  background-position: 163px center;
+  color: #FFFEFD;
+}
+
 /* CARD */
 .card {
   background: #FFFFFF;

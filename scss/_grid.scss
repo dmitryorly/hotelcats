@@ -6,6 +6,20 @@ html{
     box-sizing: inherit;
   }
 
+  body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1A212F;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #1A212F;
+  }
+
 .main{
   overflow: hidden;
 }
@@ -36,15 +50,9 @@ html{
   }
 }
 
-/* .wrapper{
-    max-width: 1366px;
-    padding: 0 98px;
-    margin: 0 auto;
-
-    &_full
-    {
-    width: 100%;
-    max-width: 1366px;
-    margin: 0 auto;
-    }
-  } */
+.title{
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+}
