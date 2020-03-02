@@ -6,6 +6,8 @@
   z-index: 99;
 }
 .header, .footer {
+  &__nav{
+  }
   &__wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -17,12 +19,14 @@
   &__menu{
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
   }
 }
   
   .menu {
   &__item{
-    margin-right: 30px;
+    margin-right: 5px;
+    height: 100%;
   }
   
   &__item:last-child{
@@ -30,8 +34,16 @@
   }
   
   &__link{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 25px;
     font-weight: 600;
     line-height: 19px;
+    transition: 0.2s;
+    &:hover{
+      background-color: $orange;
+      color: #fff;
+    }
   }
 }
 
