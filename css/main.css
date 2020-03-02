@@ -460,7 +460,19 @@ html {
 }
 
 .review__text {
+  position: relative;
   font-size: 16px;
+}
+
+.review__text:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 23px;
+  background: url("/img/svg/quote-icon.svg") no-repeat;
+  position: absolute;
+  top: 2;
+  left: -30px;
 }
 
 .review__author, .review__date {
