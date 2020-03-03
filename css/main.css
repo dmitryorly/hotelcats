@@ -111,6 +111,11 @@ a {
   line-height: 24px;
 }
 
+.title_big {
+  font-size: 56px;
+  line-height: 66px;
+}
+
 /* BUTTON */
 .button {
   width: 206px;
@@ -152,6 +157,18 @@ a {
   background-color: #FF7236;
   background-position: 163px center;
   color: #FFFEFD;
+}
+
+.button__filter {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 185px;
+  height: 42px;
+  border: 2px solid #FAC663;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 /* CARD */
@@ -634,5 +651,110 @@ a {
 
 .social-link-vk {
   background-image: url("/img/svg/social-vk-icon.svg");
+}
+
+/* CATALOG */
+.catalog {
+  margin-top: 70px;
+  margin-bottom: 140px;
+}
+
+.catalog__row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.catalog__row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__filter {
+  max-width: 210px;
+  width: 100%;
+}
+
+.catalog__subtitle {
+  margin-bottom: 20px;
+}
+
+.catalog__card-container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 870px;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.catalog__card {
+  max-width: 270px;
+}
+
+.catalog__card-title {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog__card-img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.catalog__card-text {
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.catalog__button {
+  display: block;
+  margin: 35px 20px 25px;
+}
+
+.filter__section {
+  margin-bottom: 35px;
+}
+
+.label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.price-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-field {
+  position: relative;
+}
+
+.price-input {
+  width: 100px;
+  padding-left: 25px;
+  border: 1px solid #E1E1E1;
+}
+
+.price-label {
+  position: absolute;
+  left: 5px;
+  z-index: 2;
+  line-height: 20px;
 }
 /*# sourceMappingURL=main.css.map */

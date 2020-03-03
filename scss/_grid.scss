@@ -56,4 +56,8 @@ html{
   font-weight: bold;
   font-size: 36px;
   line-height: 24px;
+  &_big{
+    font-size: 56px;
+    line-height: 66px;
+  }
 }
