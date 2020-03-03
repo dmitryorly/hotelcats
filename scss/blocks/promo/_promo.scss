@@ -1,0 +1,32 @@
+.promo{
+  margin-bottom: 140px;
+  &-bg{
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    background: url('../img/svg/paw-bg-secondary.svg');
+    width: 241px;
+    height: 206px;
+    transform: rotate(-45deg);
+    scale: 0.65;
+    z-index: 15;
+  }
+  &__container{
+    width: 100%;
+    background: url('../img/promo-bg.jpg') no-repeat;
+    background-position: cover;
+    border-radius: 10px;
+  }
+  &__content{
+    padding-top: 78px;
+    padding-right: auto;
+    padding-left: 270px;
+    padding-bottom: 78px;
+  }
+  &__title{
+    margin-bottom: 25px;
+  }
+  &__text{
+    margin-bottom: 35px;
+  }
+}
