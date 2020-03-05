@@ -116,6 +116,7 @@ a {
   line-height: 66px;
 }
 
+/* TOOLITPS */
 .tooltip {
   display: block;
   position: absolute;
@@ -166,6 +167,7 @@ a {
   bottom: -16px;
 }
 
+/* CHECBOX */
 /* BUTTON */
 .button {
   width: 206px;
