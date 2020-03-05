@@ -43,9 +43,16 @@
   &__button{
     display: block;
     margin: 35px 20px 25px;
-
   }
-
+  &__equip-icon{
+    margin-left: 8px;
+    // &:first-child{
+    //   margin-left: 12px;
+    // }
+    // &:last-child{
+    //   margin-right: 0;
+    // }
+  }
 }
 
 .filter__section{

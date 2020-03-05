@@ -81,41 +81,41 @@
 
             <fieldset class="filter__section">
               <h3 class="catalog__subtitle">Площадь</h3>
-              <input id="checkbox-063" type="checkbox" checked>
+              <input id="checkbox-063" type="checkbox" >
               <label class="label" for="checkbox-063">0,63 м2</label>
               <br>
-              <input id="checkbox-090" type="checkbox" checked>
+              <input id="checkbox-090" type="checkbox" >
               <label class="label" for="checkbox-090">0,90 м2</label>
               <br>
-              <input id="checkbox-113" type="checkbox" checked>
+              <input id="checkbox-113" type="checkbox" >
               <label class="label" for="checkbox-113">1,13 м2</label>
               <br>
-              <input id="checkbox-156" type="checkbox" checked>
+              <input id="checkbox-156" type="checkbox" >
               <label class="label" for="checkbox-156">1,56 м2</label>
               <br>
-              <input id="checkbox-256" type="checkbox" checked>
+              <input id="checkbox-256" type="checkbox" >
               <label class="label" for="checkbox-256">2,56 м2</label>
               <br>
-              <input id="checkbox-288" type="checkbox" checked>
+              <input id="checkbox-288" type="checkbox" >
               <label class="label" for="checkbox-288">2,88 м2</label>
               <br>
             </fieldset>
 
             <fieldset class="filter__section">
               <h3 class="catalog__subtitle">Оснащение номера</h3>
-              <input type="checkbox" id="checkbox-empty" checked>
+              <input type="checkbox" id="checkbox-empty" >
               <label class="label" for="checkbox-empty">Пустой номер</label>
               <br>
-              <input type="checkbox" id="checkbox-bed" checked>
+              <input type="checkbox" id="checkbox-bed" >
               <label class="label" for="checkbox-bed">Лежак</label>
               <br>
-              <input type="checkbox" id="checkbox-claw" checked>
+              <input type="checkbox" id="checkbox-claw" >
               <label class="label" for="checkbox-claw">Когтеточка</label>
               <br>
-              <input type="checkbox" id="checkbox-game" checked>
+              <input type="checkbox" id="checkbox-game" >
               <label class="label" for="checkbox-game">Игровой-комплекс</label>
               <br>
-              <input type="checkbox" id="checkbox-house" checked>
+              <input type="checkbox" id="checkbox-house" >
               <label class="label" for="checkbox-house">Домик</label>
               <br>
             </fieldset>
@@ -129,53 +129,96 @@
           <div class="catalog__card-container">
 
             <div class="card catalog__card">
-              <img src="/img/catalog-room-economy.jpg" alt="Эконом" class="catalog__card-img">
+              <img src="img/catalog-room-economy.jpg" alt="Эконом" class="catalog__card-img">
               <h3 class="card__title catalog__card-title">Эконом</h3>
               <p class="catalog__card-text">Размеры (ШхГхВ) - 90х70х180 см</p>
-              <p class="catalog__card-text">Площадь - 0,63 м2</span></p>
-              <p class="catalog__card-text">Оснащение номера <span class="room__equip"><img
-                    src="/img/svg/catalog-equip-empty.svg" alt="Пустой номер" class="equip__icon"></p>
+              <p class="catalog__card-text">Площадь - 0,63 м2</p>
+              <p class="catalog__card-text">Оснащение номера
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-empty.svg"
+                    alt="Пустой номер"><span class="tooltip">Пустой номер</span>
+                </span>
+                
+              </p>
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">100&#8381;</span></p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
 
             <div class="card catalog__card">
-              <img src="/img/catalog-room-economy-plus.jpg" alt="Эконом плюс" class="catalog__card-img">
+              <img src="img/catalog-room-economy-plus.jpg" alt="Эконом плюс" class="catalog__card-img">
               <h3 class="card__title catalog__card-title">Эконом плюс</h3>
               <p class="catalog__card-text">Размеры (ШхГхВ) - 90х100х180 см</p>
               <p class="catalog__card-text">Площадь - 0,90 м2</p>
-              <p class="catalog__card-text">Оснащение номера <span class="room__equip"><img
-                    src="/img/svg/catalog-equip-bed.svg" alt="Лежак" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-claw.svg" alt="Когтеточка" class="equip__icon"></p>
+              <p class="catalog__card-text">Оснащение номера
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-bed.svg" alt="Лежак"><span
+                    class="tooltip">Лежак</span></span>
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
+                    alt="Когтеточка"><span class="tooltip">Когтеточка</span></span>
+              </p>
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">200&#8381;</p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
 
             <div class="card catalog__card">
-              <img src="/img/catalog-room-comfort.jpg" alt="Комфорт" class="catalog__card-img">
+              <img src="img/catalog-room-comfort.jpg" alt="Комфорт" class="catalog__card-img">
               <h3 class="card__title catalog__card-title">Комфорт</h3>
               <p class="catalog__card-text">Размеры (ШхГхВ) - 100х125х180 см</p>
               <p class="catalog__card-text">Площадь - 1,13 м2</p>
-              <p class="catalog__card-text">Оснащение номера <span class="room__equip"><img
-                    src="/img/svg/catalog-equip-bed.svg" alt="Лежак" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-claw.svg" alt="Когтеточка" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-game.svg" alt="Игровая комната" class="equip__icon"></p>
+              <p class="catalog__card-text">Оснащение номера
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-bed.svg" alt="Лежак">
+                  <span class="tooltip">Лежак</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
+                    alt="Когтеточка">
+                  <span class="tooltip">Когтеточка</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
+                    alt="Игровая комната">
+                  <span class="tooltip">Игровая комната</span>
+                </span>
+
+              </p>
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">250&#8381;</p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
 
             <div class="card catalog__card">
-              <img src="/img/catalog-room-suit.jpg" alt="Сьют" class="catalog__card-img">
+              <img src="img/catalog-room-suit.jpg" alt="Сьют" class="catalog__card-img">
               <h3 class="card__title catalog__card-title">Сьют</h3>
               <p class="catalog__card-text">Размеры (ШхГхВ) - 125х125х180 см</p>
               <p class="catalog__card-text">Площадь - 1,56 м2</p>
-              <p class="catalog__card-text">Оснащение номера <span class="room__equip"><img
-                    src="/img/svg/catalog-equip-bed.svg" alt="Лежак" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-claw.svg" alt="Когтеточка" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-game.svg" alt="Игровой комплекс" class="equip__icon"></p>
+              <p class="catalog__card-text">Оснащение номера
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-bed.svg" alt="Лежак">
+                  <span class="tooltip">Лежак</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
+                    alt="Когтеточка">
+                  <span class="tooltip">Когтеточка</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
+                    alt="Игровая комната">
+                  <span class="tooltip">Игровая комната</span>
+                </span>
+
+              </p>
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">350&#8381;</p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
@@ -186,11 +229,32 @@
               <h3 class="card__title catalog__card-title">Люкс</h3>
               <p class="catalog__card-text">Размеры (ШхГхВ) - 160х160х180 см</p>
               <p class="catalog__card-text">Площадь - 2,56 м2</p>
-              <p class="catalog__card-text">Оснащение номера <span class="room__equip"><img
-                    src="/img/svg/catalog-equip-bed.svg" alt="Лежак" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-claw.svg" alt="Когтеточка" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-game.svg" alt="Игровой комплекс" class="equip__icon"><img
-                    src="/img/svg/catalog-equip-house.svg" alt="Домик" class="equip__icon"></p>
+              <p class="catalog__card-text">Оснащение номера
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-bed.svg" alt="Лежак">
+                  <span class="tooltip">Лежак</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
+                    alt="Когтеточка">
+                  <span class="tooltip">Когтеточка</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
+                    alt="Игровая комната">
+                  <span class="tooltip">Игровая комната</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-house.svg"
+                    alt="Игровая комната">
+                  <span class="tooltip">Домик</span>
+                </span>
+              </p>
+
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">500&#8381;</p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
@@ -201,11 +265,31 @@
               <h3 class="card__title catalog__card-title">Супер-Люкс</h3>
               <p class="catalog__card-text">Размеры (ШхГхВ) - 180х160х180 см</p>
               <p class="catalog__card-text">Площадь - 2,88 м2</p>
-              <p class="catalog__card-text">Оснащение номера <span class="room__equip"><img
-                    src="/img/svg/catalog-equip-bed.svg" alt="Лежак" class="equip__icon"> <img
-                    src="/img/svg/catalog-equip-claw.svg" alt="Когтеточка" class="equip__icon"> <img
-                    src="/img/svg/catalog-equip-game.svg" alt="Игровой комплекс" class="equip__icon"> <img
-                    src="/img/svg/catalog-equip-house.svg" alt="Домик" class="equip__icon"></p>
+              <p class="catalog__card-text">Оснащение номера
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-bed.svg" alt="Лежак">
+                  <span class="tooltip">Лежак</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
+                    alt="Когтеточка">
+                  <span class="tooltip">Когтеточка</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
+                    alt="Игровая комната">
+                  <span class="tooltip">Игровая комната</span>
+                </span>
+
+                <span class="tooltip__container">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-house.svg"
+                    alt="Игровая комната">
+                  <span class="tooltip">Домик</span>
+                </span>
+              </p>
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">600&#8381;</p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
@@ -230,9 +314,9 @@
               <strong class="title_big">бесплатно!</strong>
             </h2>
             <p class="promo__text">Акция действует при размещении <br>в номерах “Люкс” и “Супер-Люкс” </p>
-              <button class="promo__button button button_white">
-                <span class="button__text">Забронировать</span> 
-              </button>
+            <button class="promo__button button button_white">
+              <span class="button__text">Забронировать</span>
+            </button>
           </div>
         </div>
       </div>
