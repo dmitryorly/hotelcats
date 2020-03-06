@@ -168,6 +168,42 @@ a {
 }
 
 /* CHECBOX */
+.checkbox {
+  display: none;
+}
+
+.checkbox__label {
+  position: relative;
+  display: block;
+  margin-left: 30px;
+}
+
+.checkbox__label:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: -2px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #E1E1E1;
+}
+
+.checkbox:checked + .checkbox__label:before {
+  background: url("../img/svg/checkbox-checked.svg") no-repeat center center;
+  color: red;
+}
+
+.checkbox:active + .checkbox__label:before {
+  -webkit-box-shadow: 0px 10px 50px #ff7236;
+          box-shadow: 0px 10px 50px #ff7236;
+}
+
+.checkbox:hover + .checkbox__label:before {
+  outline: 2px solid #E1E1E1;
+  outline-offset: -3px;
+}
+
 /* BUTTON */
 .button {
   width: 206px;
@@ -736,6 +772,15 @@ a {
 
 .catalog__subtitle {
   margin-bottom: 20px;
+}
+
+.catalog__label {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.catalog__label:last-child {
+  margin-bottom: 0;
 }
 
 .catalog__card-container {

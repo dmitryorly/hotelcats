@@ -17,6 +17,13 @@
   &__subtitle{
     margin-bottom: 20px;
   }
+  &__label{
+    position: relative;
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
   &__card-container{
     display: grid;
     max-width: 870px;
