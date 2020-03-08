@@ -3,7 +3,7 @@
   &__label{
     position: relative;
 
-    display: block;
+    display: inline-block;
 
     margin-left: 30px;
 
@@ -18,8 +18,9 @@
       width: 20px;
       
       border: 1px solid $circle;
+      background-position: center center;
       
-      // transition: .2s;
+      transition: .15s;
     }
     
   }
@@ -27,11 +28,11 @@
     background: url('../img/svg/checkbox-checked.svg') no-repeat center center;
     color: red;
   }
-  &:active + &__label:before{
-    box-shadow: 0px 10px 50px rgba($orange, 1);
-  }
   &:hover + &__label:before{
-    outline: 2px solid $circle;
-    outline-offset: -3px;
+    box-shadow: inset 0px 0px 5px rgba($circle-active, 1);
+
+  }
+  &:active + &__label:before{
+    box-shadow: inset 0px 0px 15px rgba($circle-active, 1);
   }
 }
