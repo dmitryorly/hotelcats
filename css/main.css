@@ -167,6 +167,81 @@ a {
   bottom: -16px;
 }
 
+/* SELECT */
+.select {
+  font-size: 14px;
+  cursor: pointer;
+  /* delete html select if css is ready */
+  /* display drop-down select */
+  /* image to the left of the text */
+}
+
+.select_no-js {
+  display: none;
+  visibility: hidden;
+}
+
+.select__container {
+  position: absolute;
+  top: 0;
+  right: 98px;
+  z-index: 10;
+  margin-bottom: 35px;
+  width: 174px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
+          box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
+  background-color: #fff;
+  /* arrow to down on the right */
+}
+
+.select__container:after {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: block;
+  width: 14px;
+  height: 8px;
+  background: url("../img/svg/arrow-drop-down.svg") no-repeat;
+  content: '';
+}
+
+.select__option {
+  display: none;
+  overflow: hidden;
+  padding: 12px 0;
+  padding-left: 20px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  /* display if drop-down select hidden */
+}
+
+.select__option_active {
+  display: block;
+}
+
+.select__option:first-child {
+  border-radius: 25px 25px 0 0;
+}
+
+.select__option:last-child {
+  border-radius: 0 0 25px 25px;
+}
+
+.select__option:nth-child(n + 2):hover {
+  background-color: #FAC663;
+}
+
+.select__container_checked .select__option {
+  display: block;
+}
+
+.select__icon {
+  margin-top: -2px;
+  padding-right: 5px;
+}
+
 /* CHECBOX */
 .checkbox {
   display: none;
@@ -208,6 +283,35 @@ a {
 }
 
 /* BUTTON */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .button {
   width: 206px;
   height: 50px;
@@ -216,15 +320,17 @@ a {
   -webkit-box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
           box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
   position: relative;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .button:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  -webkit-box-shadow: 0px 10px 50px rgba(26, 33, 47, 0.1);
-          box-shadow: 0px 10px 50px rgba(26, 33, 47, 0.1);
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .button__text {
