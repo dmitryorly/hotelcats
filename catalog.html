@@ -20,7 +20,7 @@
   <meta name="msapplication-TileColor" content="#08162a">
   <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  
+
   <!-- FAVICON END -->
 
 </head>
@@ -65,13 +65,30 @@
 
         <div class="catalog__row-1">
           <h2 class="title catalog__title">Наши номера</h2>
-          <select name="" id="" class="catalog__sort">
+          <select name="" id="" class="catalog__sort select_no-js">
             <option value="">По площади</option>
             <option value="">По площади</option>
             <option value="">По цене</option>
             <option value="">По цене</option>
           </select>
+
+          <div class="select__container select__container_checked">
+            <div class="select__option select__option_active">
+              <img src="img/svg/arrow-up.svg" alt="По возрастанию" class="select__icon">По площади 
+            </div>
+            <div class="select__option">
+              <img src="img/svg/arrow-down.svg" alt="По убыванию" class="select__icon">По площади
+            </div>
+            <div class="select__option">
+              <img src="img/svg/arrow-up.svg" alt="По возрастанию" class="select__icon">По цене
+            </div>
+            <div class="select__option">
+              <img src="img/svg/arrow-down.svg" alt="По убыванию" class="select__icon">По цене
+            </div>
+          </div>
+
         </div>
+
 
 
         <div class="catalog__row-2">
@@ -96,53 +113,53 @@
 
             <fieldset class="filter__section">
               <h3 class="catalog__subtitle">Площадь</h3>
-              <input class="checkbox" id="checkbox-063" type="checkbox" >
+              <input class="checkbox" id="checkbox-063" type="checkbox">
               <label class="label checkbox__label catalog__label" for="checkbox-063">0,63 м2</label>
-<br>
-              
-               <input class="checkbox" id="checkbox-090" type="checkbox" >
+              <br>
+
+              <input class="checkbox" id="checkbox-090" type="checkbox">
               <label class="label checkbox__label catalog__label" for="checkbox-090">0,90 м2</label>
-<br>
-              
-               <input class="checkbox" id="checkbox-113" type="checkbox" >
+              <br>
+
+              <input class="checkbox" id="checkbox-113" type="checkbox">
               <label class="label checkbox__label catalog__label" for="checkbox-113">1,13 м2</label>
-<br>
-              
-               <input class="checkbox" id="checkbox-156" type="checkbox" >
+              <br>
+
+              <input class="checkbox" id="checkbox-156" type="checkbox">
               <label class="label checkbox__label catalog__label" for="checkbox-156">1,56 м2</label>
-<br>
-              
-               <input class="checkbox" id="checkbox-256" type="checkbox" >
+              <br>
+
+              <input class="checkbox" id="checkbox-256" type="checkbox">
               <label class="label checkbox__label catalog__label" for="checkbox-256">2,56 м2</label>
-<br>
-              
-               <input class="checkbox" id="checkbox-288" type="checkbox" >
+              <br>
+
+              <input class="checkbox" id="checkbox-288" type="checkbox">
               <label class="label checkbox__label catalog__label" for="checkbox-288">2,88 м2</label>
-<br>
-              
+              <br>
+
             </fieldset>
 
             <fieldset class="filter__section">
               <h3 class="catalog__subtitle">Оснащение номера</h3>
-              <input class="checkbox" type="checkbox" id="checkbox-empty" >
+              <input class="checkbox" type="checkbox" id="checkbox-empty">
               <label class="label checkbox__label catalog__label" for="checkbox-empty">Пустой номер</label>
-<br>
-              
-              <input class="checkbox" type="checkbox" id="checkbox-bed" >
+              <br>
+
+              <input class="checkbox" type="checkbox" id="checkbox-bed">
               <label class="label checkbox__label catalog__label" for="checkbox-bed">Лежак</label>
-<br>
-              
-              <input class="checkbox" type="checkbox" id="checkbox-claw" >
+              <br>
+
+              <input class="checkbox" type="checkbox" id="checkbox-claw">
               <label class="label checkbox__label catalog__label" for="checkbox-claw">Когтеточка</label>
-<br>
-              
-              <input class="checkbox" type="checkbox" id="checkbox-game" >
+              <br>
+
+              <input class="checkbox" type="checkbox" id="checkbox-game">
               <label class="label checkbox__label catalog__label" for="checkbox-game">Игровой-комплекс</label>
-<br>
-              
-              <input class="checkbox" type="checkbox" id="checkbox-house" >
+              <br>
+
+              <input class="checkbox" type="checkbox" id="checkbox-house">
               <label class="label checkbox__label catalog__label" for="checkbox-house">Домик</label>
-<br>
+              <br>
             </fieldset>
 
             <input class="button button__filter" type="reset" value="Сбросить фильтр">
@@ -161,10 +178,10 @@
               <p class="catalog__card-text">Оснащение номера
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-empty.svg"
-                    alt="Пустой номер"><span class="tooltip">Пустой номер</span>
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-empty.svg" alt="Пустой номер"><span
+                    class="tooltip">Пустой номер</span>
                 </span>
-                
+
               </p>
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">100&#8381;</span></p>
               <button class="catalog__button button button_orange"><span
@@ -181,8 +198,8 @@
                   <img class="catalog__equip-icon " src="img/svg/catalog-equip-bed.svg" alt="Лежак"><span
                     class="tooltip">Лежак</span></span>
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
-                    alt="Когтеточка"><span class="tooltip">Когтеточка</span></span>
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg" alt="Когтеточка"><span
+                    class="tooltip">Когтеточка</span></span>
               </p>
               <p class="catalog__card-text">Цена за сутки: <span class="room__price">200&#8381;</p>
               <button class="catalog__button button button_orange"><span
@@ -202,14 +219,12 @@
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
-                    alt="Когтеточка">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg" alt="Когтеточка">
                   <span class="tooltip">Когтеточка</span>
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
-                    alt="Игровая комната">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg" alt="Игровая комната">
                   <span class="tooltip">Игровая комната</span>
                 </span>
 
@@ -232,14 +247,12 @@
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
-                    alt="Когтеточка">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg" alt="Когтеточка">
                   <span class="tooltip">Когтеточка</span>
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
-                    alt="Игровая комната">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg" alt="Игровая комната">
                   <span class="tooltip">Игровая комната</span>
                 </span>
 
@@ -262,20 +275,17 @@
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
-                    alt="Когтеточка">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg" alt="Когтеточка">
                   <span class="tooltip">Когтеточка</span>
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
-                    alt="Игровая комната">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg" alt="Игровая комната">
                   <span class="tooltip">Игровая комната</span>
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-house.svg"
-                    alt="Игровая комната">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-house.svg" alt="Игровая комната">
                   <span class="tooltip">Домик</span>
                 </span>
               </p>
@@ -298,20 +308,17 @@
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg"
-                    alt="Когтеточка">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg" alt="Когтеточка">
                   <span class="tooltip">Когтеточка</span>
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg"
-                    alt="Игровая комната">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-game.svg" alt="Игровая комната">
                   <span class="tooltip">Игровая комната</span>
                 </span>
 
                 <span class="tooltip__container">
-                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-house.svg"
-                    alt="Игровая комната">
+                  <img class="catalog__equip-icon " src="img/svg/catalog-equip-house.svg" alt="Игровая комната">
                   <span class="tooltip">Домик</span>
                 </span>
               </p>
@@ -346,42 +353,42 @@
         </div>
       </div>
     </section>
-    
-        <!-- CONTACTS START -->
-        <section id="contacts" class="contacts">
-          <div class="wrapper_full">
-            <div class="contacts__container">
-              <div class="contacts__info">
-                <h2 class="contacts__title title">Как нас найти</h2>
-                <h3 class="contacts__subtitle">Адрес</h3>
-                <p class="contacts__text">Санкт-Петербург,
-                  <br>ул Большая Конюшенная, д 19</p>
-                <h3 class="contacts__subtitle">Режим работы</h3>
-                <p class="contacts__text">Ежедневно, с 9:00 до 20:00</p>
-                <h3 class="contacts__subtitle">Телефон</h3>
-                <a href="tel:=+78003335599" class="contacts__text contacts__link">8 (800) 333-55-99</a>
-                <h3 class="contacts__subtitle">E-mail</h3>
-                <a href="mailto:info@cat-hotel.ru" class="contacts__text contacts__link">info@cat-hotel.ru</a>
-                <h3 class="contacts__subtitle">Социальные сети</h3>
-                <a href="#!" class="social-link social-link-fb"></a>
-                <a href="#!" class="social-link social-link-inst"></a>
-                <a href="#!" class="social-link social-link-vk"></a>
-              </div>
-    
-              <div class="contacts__map">
-                <div style="position:relative;overflow:hidden;"><a
-                    href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-                    href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324539%2C59.938658&sll=30.315635%2C59.938951&sspn=0.986023%2C0.304917&utm_medium=mapframe&utm_source=maps&z=18"
-                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
-                    Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKaL7MYZ" width="798" height="580"
-                    allowfullscreen="true" style="position:relative;"></iframe></div>
-              </div>
-            </div>
+
+    <!-- CONTACTS START -->
+    <section id="contacts" class="contacts">
+      <div class="wrapper_full">
+        <div class="contacts__container">
+          <div class="contacts__info">
+            <h2 class="contacts__title title">Как нас найти</h2>
+            <h3 class="contacts__subtitle">Адрес</h3>
+            <p class="contacts__text">Санкт-Петербург,
+              <br>ул Большая Конюшенная, д 19</p>
+            <h3 class="contacts__subtitle">Режим работы</h3>
+            <p class="contacts__text">Ежедневно, с 9:00 до 20:00</p>
+            <h3 class="contacts__subtitle">Телефон</h3>
+            <a href="tel:=+78003335599" class="contacts__text contacts__link">8 (800) 333-55-99</a>
+            <h3 class="contacts__subtitle">E-mail</h3>
+            <a href="mailto:info@cat-hotel.ru" class="contacts__text contacts__link">info@cat-hotel.ru</a>
+            <h3 class="contacts__subtitle">Социальные сети</h3>
+            <a href="#!" class="social-link social-link-fb"></a>
+            <a href="#!" class="social-link social-link-inst"></a>
+            <a href="#!" class="social-link social-link-vk"></a>
           </div>
+
+          <div class="contacts__map">
+            <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+                href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324539%2C59.938658&sll=30.315635%2C59.938951&sspn=0.986023%2C0.304917&utm_medium=mapframe&utm_source=maps&z=18"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
+                Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKaL7MYZ" width="798" height="580"
+                allowfullscreen="true" style="position:relative;"></iframe></div>
           </div>
-        </section>
-        <!-- CONTACTS END -->
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- CONTACTS END -->
 
   </main>
 
@@ -423,6 +430,8 @@
   </footer>
   <!-- FOOTER END -->
 
+  <!-- Select script -->
+  <script src="scss/blocks/select/select.js"></script>
 </body>
 
 </html>
