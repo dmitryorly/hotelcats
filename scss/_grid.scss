@@ -7,8 +7,6 @@ html{
   }
 
   body{
-    min-width: 1366px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: normal;
@@ -36,6 +34,9 @@ html{
 .wrapper{
   position: relative;
   padding: 0 98px;
+  @media screen and(max-width: 768px){
+    padding: 0 45px;
+  }
 }
 
 .bg{

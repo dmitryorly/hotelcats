@@ -1,13 +1,28 @@
 .intro{
   margin-bottom: 140px;
+  
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 
   &__wrapper{
     width: 100%;
-    background: url('../img/intro-bg.jpg') no-repeat;
-    background-size: cover;
     padding-top: 150px;
     padding-left: 198px;
     margin: 0 auto;
+
+    background: url('../img/intro-bg.jpg') no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 768px){
+      background: url('../img/svg/intro-vector-bg.svg'), url('../img/adaptive-intro-bg.jpg');
+      background-position: -120px -540px, 0 0;
+      background-repeat: no-repeat;
+      padding-left: 0;
+      height: 868px;
+      overflow: hidden;
+      position: relative;
+    }
   }
   
   &__city{

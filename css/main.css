@@ -61,7 +61,6 @@ html {
 }
 
 body {
-  min-width: 1366px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -89,6 +88,12 @@ a {
 .wrapper {
   position: relative;
   padding: 0 98px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 45px;
+  }
 }
 
 .bg-paw {
@@ -603,13 +608,31 @@ a {
   margin-bottom: 140px;
 }
 
+@media screen and (max-width: 768px) {
+  .intro {
+    text-align: center;
+  }
+}
+
 .intro__wrapper {
   width: 100%;
-  background: url("../img/intro-bg.jpg") no-repeat;
-  background-size: cover;
   padding-top: 150px;
   padding-left: 198px;
   margin: 0 auto;
+  background: url("../img/intro-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__wrapper {
+    background: url("../img/svg/intro-vector-bg.svg"), url("../img/adaptive-intro-bg.jpg");
+    background-position: -120px -540px, 0 0;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    height: 868px;
+    overflow: hidden;
+    position: relative;
+  }
 }
 
 .intro__city {
