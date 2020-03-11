@@ -1,5 +1,8 @@
 .rooms{
   margin-bottom: 140px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 120px;
+  }
   &-bg{
     left: 0;
     top: 10px;

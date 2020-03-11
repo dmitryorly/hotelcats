@@ -417,10 +417,14 @@ a {
   margin-bottom: 27px;
 }
 
+@media screen and (max-width: 768px) {
+  .card__list-item {
+    margin-bottom: 8px;
+  }
+}
+
 /* Maybe I should replace LIST to a independent block */
 .list__item {
-  font-family: Lato;
-  line-height: 19px;
   padding-left: 21px;
   position: relative;
 }
@@ -444,16 +448,15 @@ a {
 }
 
 .slider__slide {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  position: relative;
 }
 
 .slider__controls {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,6 +466,15 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .slider__indicators {
@@ -474,9 +486,9 @@ a {
 .slider__indicator {
   height: 12px;
   width: 12px;
+  margin-right: 12px;
   border-radius: 50%;
   background-color: #E1E1E1;
-  margin-right: 12px;
   cursor: pointer;
 }
 
@@ -498,17 +510,23 @@ a {
   margin-left: 400px;
 }
 
+@media screen and (max-width: 768px) {
+  .slider__nav-buttons {
+    display: none;
+  }
+}
+
 .slider__nav-button {
   position: relative;
   width: 36px;
   height: 36px;
+  padding: 0;
+  margin-right: 10px;
   border: none;
   border-radius: 50%;
   -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
           box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
   background-color: #fff;
-  padding: 0;
-  margin-right: 10px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -523,28 +541,49 @@ a {
 }
 
 .slide__card {
-  width: 500px;
-  height: 284px;
-  padding: 34px 100px;
-  margin: 60px 0;
   position: absolute;
   top: 0;
-  left: 530px;
+  right: 0;
   z-index: 2;
+  padding: 34px 100px;
+  margin: 60px 0;
 }
 
-.slide__pic {
+@media screen and (max-width: 960px) {
+  .slide__card {
+    padding: 35px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide__card {
+    margin: 30px 0;
+  }
+}
+
+.slide__img {
+  max-width: 600px;
+  max-height: 404px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .slide__img {
+    width: 442px;
+    height: 324px;
+  }
 }
 
 .slide__tariff {
   margin-bottom: 20px;
 }
 
-.button__img {
-  position: absolute;
-  top: 14px;
-  left: 14px;
+@media screen and (max-width: 768px) {
+  .slide__tariff {
+    margin-bottom: 14px;
+  }
 }
 
 /*HEADER*/
@@ -743,6 +782,12 @@ a {
 /* ROOMS */
 .rooms {
   margin-bottom: 140px;
+}
+
+@media screen and (max-width: 768px) {
+  .rooms {
+    margin-bottom: 120px;
+  }
 }
 
 .rooms-bg {

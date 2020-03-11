@@ -25,6 +25,10 @@
     &:last-child{
       margin-bottom: 27px;
   }
+
+  @media screen and (max-width: 768px){
+    margin-bottom: 8px;
+  }
 }
 }
 
@@ -32,8 +36,8 @@
 
 .list{
   &__item{
-    font-family: Lato;
-    line-height: 19px;
+    // font-family: Lato;
+    // line-height: 19px;
     padding-left: 21px;
     position: relative;
     &::before{
