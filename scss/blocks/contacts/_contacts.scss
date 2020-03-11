@@ -5,25 +5,47 @@
   }
   &__title{
     margin-bottom: 50px;
+    @media screen and (max-width: 960px){
+      margin-bottom: 35px;
+    }
   }
   &__info{
-    background-color: $circle-active;
-    padding: 70px 100px 70px 198px;
     max-width: 568px;
     max-height: 580px;
+    min-width: 369px;
+    padding: 70px 100px 70px 198px;
+    
+    background-color: $circle-active;
+    @media screen and (max-width: 1365px){
+      padding: 60px 45px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 960px){
+      padding: 60px 45px;
+    }
   }
   &__subtitle{
+    margin-bottom: 10px;
+
     font-family: Lato;
     font-style: normal;
-    font-weight: bold;
     font-size: 16px;
+    font-weight: bold;
     line-height: 19px;
-    margin-bottom: 10px;
+
+    @media screen and (max-width: 960px){
+      margin-bottom: 5px;
+    }
   }
   &__text{
+    margin-bottom: 30px;
+
     font-weight: normal;
     line-height: 19px;
-    margin-bottom: 30px;
+
+    @media screen and (max-width: 960px){
+      margin-bottom: 25px;
+    }
   }
   &__link{
     display: block;

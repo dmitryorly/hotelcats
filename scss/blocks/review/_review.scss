@@ -1,5 +1,8 @@
 .review{
   margin-bottom: 140px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 120px;    
+  }
   &-bg{
     right: -20px;
     top: -90px;
