@@ -204,6 +204,8 @@ a {
   height: 8px;
   background: url("../img/svg/arrow-drop-down.svg") no-repeat;
   content: '';
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .select__option {
