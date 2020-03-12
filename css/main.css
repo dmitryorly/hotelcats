@@ -595,6 +595,37 @@ a {
   z-index: 99;
 }
 
+.header__burger {
+  position: relative;
+  display: none;
+  width: 22px;
+  height: 16px;
+}
+
+@media screen and (max-width: 668px) {
+  .header__burger {
+    display: block;
+  }
+}
+
+.header__burger-line {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #1A212F;
+  border-radius: 1px;
+}
+
+.header__burger-line:first-child {
+  top: 0;
+}
+
+.header__burger-line:last-child {
+  top: 15px;
+}
+
 .header__wrapper, .footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

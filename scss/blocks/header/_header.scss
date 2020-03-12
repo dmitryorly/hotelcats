@@ -4,6 +4,38 @@
   width: 100%;
   background: #ffffff;
   z-index: 99;
+
+  &__burger{
+    position: relative;
+
+    display: none;
+    width: 22px;
+    height: 16px;
+
+    @media screen and (max-width: 668px){
+      display: block;
+    }
+
+    &-line{
+      position: absolute;
+      top: 7px;
+      left: 0;
+
+      width: 22px;
+      height: 2px;
+
+      background-color: #1A212F;
+      border-radius: 1px;
+
+      &:first-child{
+        top: 0;
+      }
+      &:last-child{
+        top: 15px;
+      }
+    }
+
+  }
 }
 .header, .footer {
   &__wrapper{
