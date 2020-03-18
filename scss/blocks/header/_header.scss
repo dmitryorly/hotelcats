@@ -15,7 +15,10 @@
     cursor: pointer;
 
     &_active{
-      display: block;
+
+      @media screen and (max-width: 668px){
+        display: block;
+      }
     }
 
     &-line{

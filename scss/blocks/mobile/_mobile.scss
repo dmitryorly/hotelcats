@@ -28,13 +28,14 @@
     transition: all .3s;
 
     &_active{
-      left: 0;
+      
+      @media screen and (max-width: 668px){
+        display: block;
+        visibility: visible;
+  
+        transform: translateX(0);
+      }
 
-      display: block;
-      visibility: visible;
-
-
-      transform: translateX(0);
 
     }
   }

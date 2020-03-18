@@ -609,8 +609,10 @@ a {
   cursor: pointer;
 }
 
-.header__burger_active {
-  display: block;
+@media screen and (max-width: 668px) {
+  .header__burger_active {
+    display: block;
+  }
 }
 
 .header__burger-line {
@@ -727,12 +729,13 @@ a {
   transition: all .3s;
 }
 
-.mobile__menu_active {
-  left: 0;
-  display: block;
-  visibility: visible;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+@media screen and (max-width: 668px) {
+  .mobile__menu_active {
+    display: block;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .mobile__list {
