@@ -12,7 +12,9 @@
     width: 22px;
     height: 16px;
 
-    @media screen and (max-width: 668px){
+    cursor: pointer;
+
+    &_active{
       display: block;
     }
 
@@ -36,6 +38,13 @@
     }
 
   }
+  
+  &__nav{
+    @media screen and (max-width: 668px){
+      display: none;
+    }
+  }
+
 }
 .header, .footer {
   &__wrapper{
@@ -44,6 +53,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
+
   }
 
   &__menu{

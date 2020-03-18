@@ -96,6 +96,12 @@ a {
   }
 }
 
+@media screen and (max-width: 668px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+}
+
 .bg-paw {
   position: absolute;
   width: 367px;
@@ -600,12 +606,11 @@ a {
   display: none;
   width: 22px;
   height: 16px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 668px) {
-  .header__burger {
-    display: block;
-  }
+.header__burger_active {
+  display: block;
 }
 
 .header__burger-line {
@@ -624,6 +629,12 @@ a {
 
 .header__burger-line:last-child {
   top: 15px;
+}
+
+@media screen and (max-width: 668px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .header__wrapper, .footer__wrapper {
@@ -683,6 +694,85 @@ a {
   font-size: 12px;
   line-height: 14px;
   color: #8F8F8F;
+}
+
+.mobile-row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+}
+
+.mobile__wrapper {
+  padding: 0 15px;
+}
+
+.mobile__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAC663;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mobile__menu_active {
+  left: 0;
+  display: block;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile__list {
+  margin-top: 50px;
+}
+
+.mobile-menu__item {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mobile__close {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.mobile__close-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #1A212F;
+  border-radius: 1px;
+}
+
+.mobile__close-line:first-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.mobile__close-line:last-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 /* INTRO */

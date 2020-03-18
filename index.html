@@ -21,7 +21,7 @@
   <meta name="msapplication-TileColor" content="#08162a">
   <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  
+
   <!-- FAVICON END -->
 
 </head>
@@ -36,7 +36,58 @@
         <div class="header__logo">
           <a href="#!"><img src="img/svg/logo.svg" alt="Котейка" class="logo__pic"></a>
         </div>
-        
+
+        <div class="header__burger header__burger_active">
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+        </div>
+
+        <div class="mobile__menu">
+          <div class="mobile__wrapper">
+
+            <div class="mobile-row-1">
+              <div class="header__logo">
+                <a href="#!"><img src="img/svg/logo.svg" alt="Котейка" class="logo__pic"></a>
+              </div>
+
+              <div class="mobile__close">
+                <div class="mobile__close-line"></div>
+                <div class="mobile__close-line"></div>
+              </div>
+            </div>
+
+
+
+            <nav class="mobile__nav">
+              <ul class="mobile__list">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#about">Почему мы?</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#rooms">Номера</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#review">Отзывы</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#contacts">Как нас найти</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="tel:=+78003335599" class="contacts__text contacts__link">8 (800) 333-55-99</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="#!" class="social-link social-link-fb"></a>
+                <a href="#!" class="social-link social-link-inst"></a>
+                <a href="#!" class="social-link social-link-vk"></a>
+                </li>
+
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="menu__item">
@@ -52,11 +103,6 @@
               <a class="menu__link" href="#contacts">Как нас найти</a>
             </li>
           </ul>
-          <div class="header__burger">
-            <div class="header__burger-line"></div>
-            <div class="header__burger-line"></div>
-            <div class="header__burger-line"></div>
-          </div>
         </nav>
 
       </div>
@@ -276,7 +322,9 @@
           </div>
 
           <div class="contacts__map">
-            <iframe class="contacts-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af73fc3cd69993da32800d10bf4ec7c8ce43bca3afe327aa864802cb4df1f0def&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe class="contacts-map"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Af73fc3cd69993da32800d10bf4ec7c8ce43bca3afe327aa864802cb4df1f0def&amp;source=constructor"
+              width="100%" height="100%" frameborder="0"></iframe>
           </div>
         </div>
       </div>
@@ -323,6 +371,7 @@
 
   </footer>
   <!-- FOOTER END -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
