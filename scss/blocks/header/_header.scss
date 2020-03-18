@@ -56,7 +56,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
-
   }
 
   &__menu{
@@ -97,5 +96,12 @@
     font-size: 12px;
     line-height: 14px;
     color: #8F8F8F;
+  }
+}
+
+.logo__pic{
+  @media screen and (max-width: 480px){
+    height: 38px;
+    width: auto;
   }
 }

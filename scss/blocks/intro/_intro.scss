@@ -6,6 +6,10 @@
     margin-bottom: 120px;
   }
 
+  @media screen and (max-width: 480px){
+    margin-bottom: 70px;
+  }
+
   &__wrapper{
     width: 100%;
     padding-top: 150px;
@@ -16,19 +20,33 @@
     background-size: cover;
 
     @media screen and (max-width: 768px){
+      position: relative;
+      overflow: hidden;
+      
+      padding-left: 0;
+      height: 868px;
+      
       background: url('../img/svg/intro-vector-bg.svg'), url('../img/adaptive-intro-bg.jpg');
       background-position: -120px -540px, 0 0;
       background-repeat: no-repeat;
-      padding-left: 0;
-      height: 868px;
-      overflow: hidden;
-      position: relative;
+    }
+    @media screen and (max-width: 480px){
+      height: calc(100vh - 62px);
+      padding-top: 50px;
+      background: url('../img/intro-bg-mobile.jpg') no-repeat;
+      background-size: cover;
+
     }
   }
   
   &__city{
     font-size: 14px;
     line-height: 14px;
+
+    @media screen and (max-width: 350px){
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
   
   &__title{
@@ -37,6 +55,11 @@
     font-size: 62px;
     line-height: 72px;
     margin-bottom: 5px;
+
+    @media screen and (max-width: 350px){
+      font-size: 44px;
+      line-height: 52px;
+    }
   }
   
   &__subtitle{
@@ -44,6 +67,11 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 36px;
+
+    @media screen and (max-width: 350px){
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
   
   &__button{

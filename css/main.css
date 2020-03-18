@@ -79,6 +79,12 @@ a {
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .main {
+    margin-top: 62px;
+  }
+}
+
 .wrapper, .wrapper_full {
   max-width: 1366px;
   margin: 0 auto;
@@ -698,6 +704,13 @@ a {
   color: #8F8F8F;
 }
 
+@media screen and (max-width: 480px) {
+  .logo__pic {
+    height: 38px;
+    width: auto;
+  }
+}
+
 .mobile-row-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -790,6 +803,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .intro {
+    margin-bottom: 70px;
+  }
+}
+
 .intro__wrapper {
   width: 100%;
   padding-top: 150px;
@@ -801,19 +820,35 @@ a {
 
 @media screen and (max-width: 768px) {
   .intro__wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-left: 0;
+    height: 868px;
     background: url("../img/svg/intro-vector-bg.svg"), url("../img/adaptive-intro-bg.jpg");
     background-position: -120px -540px, 0 0;
     background-repeat: no-repeat;
-    padding-left: 0;
-    height: 868px;
-    overflow: hidden;
-    position: relative;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro__wrapper {
+    height: calc(100vh - 62px);
+    padding-top: 50px;
+    background: url("../img/intro-bg-mobile.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
 .intro__city {
   font-size: 14px;
   line-height: 14px;
+}
+
+@media screen and (max-width: 350px) {
+  .intro__city {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .intro__title {
@@ -824,11 +859,25 @@ a {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 350px) {
+  .intro__title {
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+
 .intro__subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 36px;
+}
+
+@media screen and (max-width: 350px) {
+  .intro__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .intro__button {
