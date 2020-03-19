@@ -6,6 +6,10 @@
 
     display: flex;
     flex-wrap: nowrap;
+
+    @media screen and (max-width: 480px){
+      flex-wrap: wrap;
+    }
   }
   &__controls{
     display: flex;
@@ -15,6 +19,9 @@
 
     @media screen and (max-width: 768px){
       justify-content: center;
+    }
+    @media screen and (max-width: 480px){
+      margin-top: 0;
     }
   }
   &__indicators{
@@ -78,8 +85,6 @@
     right: 0;
     z-index: 2;
 
-    // width: 500px;
-    // height: 284px;
     padding: 34px 100px;
     margin: 60px 0;
 
@@ -88,6 +93,15 @@
     }
     @media screen and (max-width: 768px){
       margin: 30px 0;
+    }
+    @media screen and (max-width: 480px){
+      position: static;
+      
+      margin-top: 0;
+      width: 100%;
+      padding: 25px;
+
+      border-radius: 0 0 8px 8px;
     }
   }
     &__img{
@@ -101,6 +115,12 @@
         width: 442px;
         height: 324px;
       }
+
+      @media screen and (max-width: 480px){
+        width: 100%;
+
+        border-radius: 10px 10px 0 0;
+      }
     }
     &__tariff{
       margin-bottom: 20px;
@@ -109,11 +129,3 @@
       }
     }
 }
-
-
-
-// .button__img{
-//   position: absolute;
-//   top: 14px;
-//   left: 14px;
-// }
