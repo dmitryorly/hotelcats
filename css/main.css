@@ -410,6 +410,13 @@ a {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .card__title {
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+
 .card__text {
   font-size: 16px;
   line-height: 140%;
@@ -895,6 +902,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .about {
+    margin-bottom: 70px;
+  }
+}
+
 .about-bg {
   top: 10px;
   right: 10%;
@@ -932,6 +945,13 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .about__cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .about__card {
   padding: 30px;
   padding-right: 40px;
@@ -941,6 +961,7 @@ a {
 @media screen and (max-width: 768px) {
   .about__card {
     padding: 25px;
+    max-width: 100%;
   }
 }
 
