@@ -1041,6 +1041,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .review {
+    margin-bottom: 70px;
+  }
+}
+
 .review-bg {
   right: -20px;
   top: -90px;
@@ -1061,6 +1067,14 @@ a {
   height: 206px;
   padding: 35px 35px 70px 70px;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .review__card {
+    width: 100%;
+    height: auto;
+    padding: 25px 20px 25px 56px;
+  }
 }
 
 .review__card-1 {
@@ -1087,6 +1101,13 @@ a {
   left: -30px;
 }
 
+@media screen and (max-width: 480px) {
+  .review__text {
+    font-size: 15px;
+    line-height: 140%;
+  }
+}
+
 .review__author, .review__date {
   font-size: 14px;
   color: #848484;
@@ -1102,6 +1123,12 @@ a {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 380px) {
+  .review__info {
+    display: none;
+  }
+}
+
 .reviews {
   margin-bottom: 206px;
   position: relative;
@@ -1113,6 +1140,13 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .reviews {
+    margin-bottom: 250px;
+  }
 }
 
 /* CONTACTS */
