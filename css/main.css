@@ -706,6 +706,14 @@ a {
   height: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .header__menu, .footer__menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .menu__item {
   margin-right: 5px;
   height: 100%;
@@ -739,6 +747,12 @@ a {
   font-size: 12px;
   line-height: 14px;
   color: #8F8F8F;
+}
+
+@media screen and (max-width: 368px) {
+  .copyright-text:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {

@@ -62,6 +62,9 @@
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    @media screen and (max-width: 480px){
+      justify-content: flex-start;
+    }
   }
 }
   
@@ -96,6 +99,11 @@
     font-size: 12px;
     line-height: 14px;
     color: #8F8F8F;
+    @media screen and (max-width: 368px){
+      &:first-child{
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
