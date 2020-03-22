@@ -1310,15 +1310,15 @@ a {
 }
 
 .social-link-fb {
-  background-image: url("/img/svg/social-fb-icon.svg");
+  background-image: url("../img/svg/social-fb-icon.svg");
 }
 
 .social-link-inst {
-  background-image: url("/img/svg/social-inst-icon.svg");
+  background-image: url("../img/svg/social-inst-icon.svg");
 }
 
 .social-link-vk {
-  background-image: url("/img/svg/social-vk-icon.svg");
+  background-image: url("../img/svg/social-vk-icon.svg");
 }
 
 /* CATALOG */
