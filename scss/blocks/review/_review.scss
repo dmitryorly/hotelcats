@@ -15,6 +15,14 @@
     text-align: center;
     margin-bottom: 70px;
   }
+
+  &__cards{
+    position: absolute;
+    left: 270px;
+
+    transition: .5s;
+  }
+
   &__card{
     position: absolute;
     top: 0;
