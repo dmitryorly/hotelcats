@@ -61,3 +61,9 @@
   };
   scrollTo();
 }());
+
+
+// slider 
+// (function() {
+//   let leftBtn = document.querySelector
+// }());
