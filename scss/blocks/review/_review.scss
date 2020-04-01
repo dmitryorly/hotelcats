@@ -7,6 +7,7 @@
     margin-bottom: 70px;    
   }
   &-bg{
+    z-index: -1;
     right: -20px;
     top: -90px;
     transform: rotate(-45deg);
