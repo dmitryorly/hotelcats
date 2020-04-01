@@ -1,2 +1,4 @@
-#Temporary files
+# Temporary files
 temp/
+# vscode settings 
+.vscode
