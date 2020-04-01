@@ -1,6 +1,6 @@
-function sliderInit(mainElem) {
+function sliderInit(mainElemSelector) {
   
-  const slider = document.querySelector(".slider"),
+  const slider = document.querySelector(mainElemSelector),
       dots = slider.querySelectorAll(".dot"),
       slides = slider.querySelectorAll(".slide"),
       nextButton = slider.querySelector(".next-button"),
@@ -34,6 +34,4 @@ nextButton.addEventListener('click', () =>{
   
 }
 
-sliderInit(document.querySelector("#review-slider"))
-sliderInit(document.querySelector("#rooms-slider"))
-
+sliderInit("#review-slider")
