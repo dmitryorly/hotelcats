@@ -35,3 +35,4 @@ nextButton.addEventListener('click', () =>{
 }
 
 (sliderInit("#review-slider"))
+(sliderInit("#rooms-slider"))

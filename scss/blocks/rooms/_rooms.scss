@@ -14,4 +14,13 @@
     text-align: center;
     margin-bottom: 70px;
   }
+  &__slide{
+    max-width: 1030px;
+    width: 100%;
+    flex: 0 0 100%;
+
+    transform: translateY(0%);
+
+    transition: .5s ease;
+  }
 }
