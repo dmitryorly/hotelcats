@@ -78,8 +78,8 @@
                 </li>
                 <li class="mobile-menu__item">
                   <a href="#!" class="social-link social-link-fb"></a>
-                <a href="#!" class="social-link social-link-inst"></a>
-                <a href="#!" class="social-link social-link-vk"></a>
+                  <a href="#!" class="social-link social-link-inst"></a>
+                  <a href="#!" class="social-link social-link-vk"></a>
                 </li>
 
               </ul>
@@ -220,21 +220,27 @@
           </div>
 
 
-          <div class="slider__controls">
-            <div class="slider__indicators">
-              <div class="slider__indicator slider__indicator-1 slider__indicator_active"></div>
-              <div class="slider__indicator slider__indicator-2"></div>
-              <div class="slider__indicator slider__indicator-3"></div>
-            </div>
+          <!-- CONTROLS START -->
 
-            <div class="slider__nav-buttons">
-              <button class="slider__nav-button slider__button_prev"><img class="button__img"
-                  src="./img/svg/button-prev-icon.svg" alt="&laquo;"></button>
-              <!--
-                  --><button class="slider__nav-button slider__button_next"><img class="button__img"
-                  src="./img/svg/button-next-icon.svg" alt="&raquo;"></button>
-            </div>
-          </div>
+      <div class="slider__controls slider__controls-container">
+
+        <div class="slider__indicators">
+          <div class="indicator indicator_active"></div>
+          <div class="indicator"></div>
+          <div class="indicator"></div>
+        </div>
+
+
+        <div class="slider__nav-buttons">
+          <button class="slider__nav-button slider__button_prev prev-button"><img class="button__img"
+              src="./img/svg/button-prev-icon.svg" alt="&laquo;"></button>
+          <!--
+                --><button class="slider__nav-button slider__button_next next-button"><img class="button__img"
+              src="./img/svg/button-next-icon.svg" alt="&raquo;"></button>
+        </div>
+
+      </div>
+      <!-- CONTROLS END -->
         </div>
       </div>
     </section>
@@ -245,30 +251,10 @@
       <div class="wrapper">
         <div class="bg-paw review-bg"></div>
         <h2 class="review__title title">Отзывы</h2>
-        <div class="slider">
-          <div class="reviews">
-            <div class="review__card review__card-0 card">
-              <div class="review__text">Первый раз пришлось оставить нашего котика
-                в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-                рассказывала, как он себя чувствует.
-                И мы и котик остались очень довольны!</div>
-              <div class="review__info">
-                <div class="review__author">Валерия Гришаева</div>
-                <div class="review__date">15 ноября, 2019</div>
-              </div>
-            </div>
+        <div class="slider" id="review-slider">
 
-            <div class="review__card review__card-1 card">
-              <div class="review__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь
-                своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем
-                рекомендую! Будем обращаться еще.</div>
-              <div class="review__info">
-                <div class="review__author">Екатерина Минаева</div>
-                <div class="review__date">10 октября, 2019</div>
-              </div>
-            </div>
-
-            <div class="review__card review__card-2 card">
+          <div class="slider__slide-container">
+            <div class="slide slide-0 slide_active review__card review__card-2 card">
               <div class="review__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования
                 к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего
                 телефона, это очень удобно. </div>
@@ -277,24 +263,47 @@
                 <div class="review__date">2 августа, 2019</div>
               </div>
             </div>
-
+            <div class="slide slide-1 review__card review__card-1 card">
+              <div class="review__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь
+                своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем
+                рекомендую! Будем обращаться еще.</div>
+              <div class="review__info">
+                <div class="review__author">Екатерина Минаева</div>
+                <div class="review__date">10 октября, 2019</div>
+              </div>
+            </div>
+            <div class="slide slide-2 review__card review__card-2 card">
+              <div class="review__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования
+                к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего
+                телефона, это очень удобно. </div>
+              <div class="review__info">
+                <div class="review__author">Павел Нечаев</div>
+                <div class="review__date">2 августа, 2019</div>
+              </div>
+            </div>
           </div>
 
-          <div class="slider__controls">
+          <!-- CONTROLS START -->
+
+          <div class="slider__controls slider__controls-container">
+
             <div class="slider__indicators">
-              <div class="slider__indicator slider__indicator-1 slider__indicator_active"></div>
-              <div class="slider__indicator slider__indicator-2"></div>
-              <div class="slider__indicator slider__indicator-3"></div>
+              <div class="indicator indicator_active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
             </div>
+
 
             <div class="slider__nav-buttons">
-              <button class="slider__nav-button slider__button_prev"><img class="button__img"
+              <button class="slider__nav-button slider__button_prev prev-button"><img class="button__img"
                   src="./img/svg/button-prev-icon.svg" alt="&laquo;"></button>
               <!--
-                    --><button class="slider__nav-button slider__button_next"><img class="button__img"
+                    --><button class="slider__nav-button slider__button_next next-button"><img class="button__img"
                   src="./img/svg/button-next-icon.svg" alt="&raquo;"></button>
             </div>
+
           </div>
+          <!-- CONTROLS END -->
         </div>
       </div>
     </section>
@@ -372,6 +381,7 @@
   </footer>
   <!-- FOOTER END -->
   <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
