@@ -1,77 +1,39 @@
-
-
-  // Variables
+function sliderInit(mainElem) {
   
-  var activeSlideIndex = 0; // Начинаем с первого слайда
-  var indicators = Array.from( document.querySelectorAll('.slider__indicator')); // Приведем к массиву для работы метода indexOf()
-  var cardsLeft = 270; // Начальная позиция карточек
-  var cardWidth = document.querySelector('.review__card').clientWidth + 30;
+  const slider = document.querySelector(".slider"),
+      dots = slider.querySelectorAll(".dot"),
+      slides = slider.querySelectorAll(".slide"),
+      nextButton = slider.querySelector(".next-button"),
+      prevButton = slider.querySelector(".prev-button");
+let activeIndex = 0;
 
-  let nextBtn = document.querySelector('.slider__button_next');
-  let prevBtn = document.querySelector('.slider__button_prev');
-  let cards = document.querySelector('.review__cards');
+const translate = (slide, index = activeIndex) => {
+  return slide.style.transform = 'translateX(' + -100 * activeIndex + '%)'
+}
 
-  // Functions
+dots.forEach((dot, index) => dot.addEventListener('click', () => {
+  dots[activeIndex].classList.remove('dot_active');
+  dot.classList.add('dot_active');
+  activeIndex = index;
+  slides.forEach(slide => translate(slide, index))
+}))
+
+prevButton.addEventListener('click', () =>{
+  dots[activeIndex].classList.remove('dot_active');
+  activeIndex >= 1 ? activeIndex -= 1 : activeIndex = slides.length - 1;
+  dots[activeIndex].classList.add('dot_active');
+  slides.forEach(slide => translate(slide, activeIndex))
+} )
+
+nextButton.addEventListener('click', () =>{
+  dots[activeIndex].classList.remove('dot_active');
+  activeIndex < slides.length - 1 ? activeIndex += 1 : activeIndex = 0;
+  dots[activeIndex].classList.add('dot_active');
+  slides.forEach(slide => translate(slide, activeIndex))
+} )
   
-  var setCardsLeft = function(val) {
-    cards.style.left = cardsLeft + 'px';
-    // console.log(activeSlideIndex, cards.style.left)
-  }
+}
 
-  const nextSlide = function() {
-    // console.log('Next slide');
+sliderInit(document.querySelector("#review-slider"))
+sliderInit(document.querySelector("#rooms-slider"))
 
-    indicators[activeSlideIndex].classList.remove('slider__indicator_active'); // Удаляем у активного индикатора активный класс
-    activeSlideIndex += 1; // Теперь активным будет следующий элемент
-    //Проверка на переполнение (зацикливание индекса)
-    if (activeSlideIndex == indicators.length) {
-      activeSlideIndex = 0;
-    }
-    cardsLeft = 270 - cardWidth * activeSlideIndex;
-    setCardsLeft(cardsLeft);
-    indicators[activeSlideIndex].classList.add('slider__indicator_active'); // Добавляем активный класс индикатору
-
-    // console.log('Active index is: ', activeSlideIndex)
-  }
-
-  const prevSlide = function() {
-    // console.log('Prev slide');
-
-    indicators[activeSlideIndex].classList.remove('slider__indicator_active');
-    activeSlideIndex -= 1; // Теперь активным будет предыдущий индикатор
-    // Зацикливаем в другую сторону
-    if (activeSlideIndex < 0) {
-      activeSlideIndex = indicators.length - 1;
-    }
-    cardsLeft = 270 - cardWidth * activeSlideIndex;
-    setCardsLeft(cardsLeft);
-    indicators[activeSlideIndex].classList.add('slider__indicator_active');
-    
-    // console.log('Active index is: ', activeSlideIndex)
-  }
-
-  // Buttons start
-
-  nextBtn.addEventListener('click', nextSlide);
-  prevBtn.addEventListener('click', prevSlide);
-
-  // Buttons end
-
-
-  // Indicators start
-  
-  indicators
-  .forEach(indicator => indicator.addEventListener
-    ('click', () => {
-    indicators.forEach(indicator => 
-      indicator.classList.remove('slider__indicator_active'))
-    
-    indicator.classList.add('slider__indicator_active');
-    // Удаляем активный класс у каждого индикатора и добавляем к нажатому
-    activeSlideIndex = indicators.indexOf(indicator);
-    // Записываем индекс активного индикатора
-    cardsLeft = 270 - 500 * activeSlideIndex;
-    setCardsLeft(cardsLeft);
-    } ))
-
-  // Indicators end
