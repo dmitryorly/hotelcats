@@ -1,95 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">  
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <main class="main">
 
-  <!-- REWIEW SECTION START -->
-  <section id="review" class="review">
-    <div class="wrapper">
-      <div class="bg-paw review-bg"></div> <!-- BG -->
-      <h2 class="review__title title">Отзывы</h2>
+    <div class="slider" id="review-slider">
 
-      <!-- SLIDER START -->
-      <div class="slider">
-        <div class="reviews">
+      <div class="slider__slide-container">
+        <div class="slide slide-0 slide_active">some text</div>
+        <div class="slide slide-1">other text</div>
+        <div class="slide slide-2">more text</div>
+      </div>
 
-          <div class="review__cards">
+      <div class="slider__controls slider__controls-container">
 
-          <div class="review__card review__card-0 card">
-            <div class="review__text">Первый раз пришлось оставить нашего котика
-              в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-              рассказывала, как он себя чувствует.
-              И мы и котик остались очень довольны!</div>
-            <div class="review__info">
-              <div class="review__author">Валерия Гришаева</div>
-              <div class="review__date">15 ноября, 2019</div>
-            </div>
-          </div>
-
-          <div class="review__card review__card-1 card">
-            <div class="review__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь
-              своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем
-              рекомендую! Будем обращаться еще.</div>
-            <div class="review__info">
-              <div class="review__author">Екатерина Минаева</div>
-              <div class="review__date">10 октября, 2019</div>
-            </div>
-          </div>
-
-          <div class="review__card review__card-2 card">
-            <div class="review__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования
-              к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего
-              телефона, это очень удобно. </div>
-            <div class="review__info">
-              <div class="review__author">Павел Нечаев</div>
-              <div class="review__date">2 августа, 2019</div>
-            </div>
-          </div>
-
+        <div class="slider__indicators">
+          <div class="indicator indicator_active"></div>
+          <div class="indicator"></div>
+          <div class="indicator"></div>
         </div>
 
 
+        <div class="slider__nav-buttons">
+          <button class="slider__nav-button slider__button_prev prev-button"><img class="button__img"
+              src="./img/svg/button-prev-icon.svg" alt="&laquo;"></button>
+          <!--
+                --><button class="slider__nav-button slider__button_next next-button"><img class="button__img"
+              src="./img/svg/button-next-icon.svg" alt="&raquo;"></button>
         </div>
-
-        <!-- CONTROLS START -->
-        <div class="slider__controls">
-          <div class="slider__indicators">
-            <div class="slider__indicator slider__indicator-1 slider__indicator_active"></div>
-            <div class="slider__indicator slider__indicator-2"></div>
-            <div class="slider__indicator slider__indicator-3"></div>
-          </div>
-
-          <!-- BUTTONS START -->
-          <div class="slider__nav-buttons">
-            <button class="slider__nav-button slider__button_prev"><img class="button__img"
-                src="./img/svg/button-prev-icon.svg" alt="&laquo;"></button>
-            <!--
-                  --><button class="slider__nav-button slider__button_next"><img class="button__img"
-                src="./img/svg/button-next-icon.svg" alt="&raquo;"></button>
-          </div>
-          <!-- BUTTONS END -->
-
-        </div>
-        <!-- CONTROLS END -->
 
       </div>
-      <!-- SLIDER END -->
-
     </div>
-  </section>
-  <!-- REWIEW SECTION START -->
-</main>
+
+  </main>
 
 
 
   <script src="js/slider.js"></script>
 </body>
+
 </html>

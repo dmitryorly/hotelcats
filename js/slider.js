@@ -1,7 +1,7 @@
 function sliderInit(mainElemSelector) {
   
   const slider = document.querySelector(mainElemSelector),
-      dots = slider.querySelectorAll(".dot"),
+      indicators = slider.querySelectorAll(".indicator"),
       slides = slider.querySelectorAll(".slide"),
       nextButton = slider.querySelector(".next-button"),
       prevButton = slider.querySelector(".prev-button");
@@ -11,27 +11,27 @@ const translate = (slide, index = activeIndex) => {
   return slide.style.transform = 'translateX(' + -100 * activeIndex + '%)'
 }
 
-dots.forEach((dot, index) => dot.addEventListener('click', () => {
-  dots[activeIndex].classList.remove('dot_active');
-  dot.classList.add('dot_active');
+indicators.forEach((indicator, index) => indicator.addEventListener('click', () => {
+  indicators[activeIndex].classList.remove('indicator_active');
+  indicator.classList.add('indicator_active');
   activeIndex = index;
   slides.forEach(slide => translate(slide, index))
 }))
 
 prevButton.addEventListener('click', () =>{
-  dots[activeIndex].classList.remove('dot_active');
+  indicators[activeIndex].classList.remove('indicator_active');
   activeIndex >= 1 ? activeIndex -= 1 : activeIndex = slides.length - 1;
-  dots[activeIndex].classList.add('dot_active');
+  indicators[activeIndex].classList.add('indicator_active');
   slides.forEach(slide => translate(slide, activeIndex))
 } )
 
 nextButton.addEventListener('click', () =>{
-  dots[activeIndex].classList.remove('dot_active');
+  indicators[activeIndex].classList.remove('indicator_active');
   activeIndex < slides.length - 1 ? activeIndex += 1 : activeIndex = 0;
-  dots[activeIndex].classList.add('dot_active');
+  indicators[activeIndex].classList.add('indicator_active');
   slides.forEach(slide => translate(slide, activeIndex))
 } )
   
 }
 
-sliderInit("#review-slider")
+(sliderInit("#review-slider"))

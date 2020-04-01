@@ -27,27 +27,7 @@
   &__indicators{
     display: inline-flex;
   }
-  &__indicator{
-    height: 12px;
-    width: 12px;
-    margin-right: 12px;
-
-    border-radius: 50%;
-    background-color: $circle;
-    cursor: pointer;
-
-    transition: ease .5s;
-
-    &_active{
-      background-color: $circle-active;
-    }
-    &:last-child{
-      margin-right: 0;
-    }
-    &:hover{
-      background-color: #FAD08B;
-    }
-  }
+  
   &__nav-buttons{
     margin-left: 400px;
 
@@ -131,4 +111,26 @@
         margin-bottom: 14px;
       }
     }
+}
+
+.indicator{
+  height: 12px;
+  width: 12px;
+  margin-right: 12px;
+
+  border-radius: 50%;
+  background-color: $circle;
+  cursor: pointer;
+
+  transition: ease .5s;
+
+  &_active{
+    background-color: $circle-active;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover{
+    background-color: #FAD08B;
+  }
 }
