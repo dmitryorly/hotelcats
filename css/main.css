@@ -482,6 +482,16 @@ a {
   }
 }
 
+.slider__slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
 .slider__controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,29 +525,6 @@ a {
   display: inline-flex;
 }
 
-.slider__indicator {
-  height: 12px;
-  width: 12px;
-  margin-right: 12px;
-  border-radius: 50%;
-  background-color: #E1E1E1;
-  cursor: pointer;
-}
-
-.slider__indicator_active {
-  background-color: #FAC663;
-}
-
-.slider__indicator:last-child {
-  margin-right: 0;
-}
-
-.slider__indicator:hover {
-  -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
-          box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.5);
-  opacity: .75;
-}
-
 .slider__nav-buttons {
   margin-left: 400px;
 }
@@ -561,6 +548,7 @@ a {
   background-color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .slider__nav-button:hover {
@@ -633,6 +621,29 @@ a {
   .slide__tariff {
     margin-bottom: 14px;
   }
+}
+
+.indicator {
+  height: 12px;
+  width: 12px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  cursor: pointer;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.indicator_active {
+  background-color: #FAC663;
+}
+
+.indicator:last-child {
+  margin-right: 0;
+}
+
+.indicator:hover {
+  background-color: #FAD08B;
 }
 
 /*HEADER*/
@@ -1073,14 +1084,23 @@ a {
   margin-bottom: 70px;
 }
 
-.review__card {
+.review__cards {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 470px;
+  left: 270px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.review__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 470px;
   height: 206px;
   padding: 35px 35px 70px 70px;
   margin-right: 30px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 @media screen and (max-width: 480px) {
@@ -1089,14 +1109,6 @@ a {
     height: auto;
     padding: 25px 20px 25px 56px;
   }
-}
-
-.review__card-1 {
-  left: 500px;
-}
-
-.review__card-2 {
-  left: 1000px;
 }
 
 .review__text {
