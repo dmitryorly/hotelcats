@@ -4,19 +4,23 @@
   let burgerOpen = document.querySelector('.header__burger');
   let menu = document.querySelector('.mobile__menu');
   let menuItems = document.querySelectorAll(".js-scroll");
+  let body = document.querySelector('body');
   
   for (let i = 0; i < menuItems.length; i++) {
     menuItems[i].addEventListener('click', () => {
-      menu.classList.remove('mobile__menu_active');
+    body.classList.remove('overflow-hidden');
+    menu.classList.remove('mobile__menu_active');
     });
   }
 
   burgerClose.addEventListener('click', () => {
     menu.classList.remove('mobile__menu_active');
+    body.classList.remove('overflow-hidden');
   })
   
   burgerOpen.addEventListener('click', () => {
     menu.classList.add('mobile__menu_active');
+    body.classList.add('overflow-hidden');
   });
 
 
