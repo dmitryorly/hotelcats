@@ -1067,6 +1067,10 @@ a {
   transition: .5s ease;
 }
 
+.rooms__slide-container {
+  overflow: hidden;
+}
+
 /* REVIEW */
 .review {
   margin-bottom: 140px;

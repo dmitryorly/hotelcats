@@ -23,4 +23,7 @@
 
     transition: .5s ease;
   }
+  &__slide-container{
+    overflow: hidden;
+  }
 }
