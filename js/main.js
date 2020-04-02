@@ -3,7 +3,7 @@
   let burgerClose = document.querySelector('.mobile__close');
   let burgerOpen = document.querySelector('.header__burger');
   let menu = document.querySelector('.mobile__menu');
-  let menuItems = document.querySelectorAll(".mobile-menu__link");
+  let menuItems = document.querySelectorAll(".js-scroll");
   
   for (let i = 0; i < menuItems.length; i++) {
     menuItems[i].addEventListener('click', () => {
@@ -18,6 +18,8 @@
   burgerOpen.addEventListener('click', () => {
     menu.classList.add('mobile__menu_active');
   });
+
+
 
 }());
 
