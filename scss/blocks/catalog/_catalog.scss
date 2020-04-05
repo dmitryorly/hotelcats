@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1130px) {
+    }
   }
   &__row-2{
     display: flex;
@@ -13,7 +16,17 @@
   &__filter{
     max-width: 210px;
     width: 100%;
+
+    @media screen and (max-width: 1130px) {
+      display: none;
+      visibility: hidden;
+    }
   }
+
+  &__title{
+    margin-right: 15px;
+  }
+
   &__subtitle{
     margin-bottom: 20px;
   }
@@ -26,19 +39,34 @@
   }
   &__card-container{
     display: grid;
-    max-width: 870px;
+    // max-width: 870px;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 960px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   &__card{
-    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // max-width: 270px;
+
+    @media screen and (max-width: 960px) {
+      max-width: none;
+    }
+
     &-title{
       margin-left: 20px;
       margin-bottom: 20px;
     }
     &-img{
       max-width: 100%;
-      margin-bottom: 20px;
+      height: 185px;
+      margin-bottom: 20px;  
+      
+      object-fit: cover;
     }
     &-text{
       font-size: 14px;
@@ -50,6 +78,11 @@
   &__button{
     display: block;
     margin: 35px 20px 25px;
+
+    @media screen and (max-width: 960px){
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__equip-icon{
     margin-left: 8px;
@@ -62,8 +95,23 @@
   }
 }
 
-.filter__section{
+.filter{
+  &__section{
   margin-bottom: 35px;
+  }
+  &__button{
+    margin-right: 248px;
+    max-width: 120px;
+    display: none;
+    visibility: hidden;
+
+    background-color: #fff;
+
+    @media screen and (max-width: 1130px) {
+      display: block;
+      visibility: visible;
+    }
+  }
 }
 
 .label{
