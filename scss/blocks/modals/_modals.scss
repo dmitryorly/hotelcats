@@ -1,0 +1,80 @@
+.modal{
+  display: none;
+  visibility: hidden;
+  &_active{
+    display: block;
+    visibility: visible;
+  }
+
+  &__container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  &__body{
+    position: relative;
+    text-align: center;
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 60px 30px;
+  }
+
+  &__close{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+
+  &__title{
+    margin-bottom: 50px;
+
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  &__form{
+    display: flex;
+    flex-flow: column nowrap;
+    
+    font-family: Lato;
+    line-height: 19px;
+    font-size: 16px;
+  }
+
+  &__input{
+    margin-bottom: 20px;
+    padding: 10px 30px;
+
+    font-family: Lato;
+    line-height: 19px;
+    font-size: 16px;
+
+    border: 1px solid #D7D7D7;
+    border-radius: 25px;
+
+    &_date{
+      padding: 10px 20px;
+    }
+
+    &::placeholder{
+      color: #1A212F;
+      opacity: 1;
+    }
+  }
+  
+  &__button{
+    max-width: 230px;
+    width: 100%;
+    align-self: center;
+  }
+
+}
+

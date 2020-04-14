@@ -120,9 +120,10 @@
           <p class="intro__city">Санкт-Петербург</p>
           <h1 class="intro__title">Котейка</h1>
           <p class="intro__subtitle">Уютная гостиница для котов и кошек</p>
-            <button class="intro__button button button_white" type="button" name="button" onclick="document.location='catalog.html'">
-              <span class="button__text">Забронировать</span>
-            </button>
+          <button class="intro__button button button_white" type="button" name="button"
+            onclick="document.location='catalog.html'">
+            <span class="button__text">Забронировать</span>
+          </button>
         </div>
       </div>
 
@@ -427,6 +428,31 @@
 
   </footer>
   <!-- FOOTER END -->
+
+  <!-- MODAL START -->
+  <div class="modal modal__container">
+    <div class="modal__body card">
+      <div class="modal__close"><img src="./img/svg/modal-close.svg" alt="Close"></div>
+      <h3 class="modal__title title">Забронировать номер</h3>
+      <form class="modal__form">
+        <input type="text" class="modal__input" placeholder="Ваше имя">
+        <input type="text" class="modal__input" placeholder="Имя Питомца">
+        <input type="tel" class="modal__input" placeholder="Телефон">
+        <input type="email" class="modal__input" placeholder="E-mail">
+        <p>Дата заезда
+          <label> c
+            <input type="date" class="modal__input modal__input_date" placeholder="26.01.2020">
+          </label>
+          <label> по
+            <input type="date" class="modal__input modal__input_date" placeholder="26.02.2020">
+          </label>
+        </p>
+        <button class="modal__button button button_orange"><span class="button__text">Отправить заявку</span></button>
+      </form>
+    </div>
+  </div>
+  <!-- MODAL END -->
+
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
 </body>
