@@ -69,7 +69,36 @@
 }());
 
 
-// slider 
-// (function() {
-//   let leftBtn = document.querySelector
-// }());
+// modal windows
+(function () {
+  let button = document.querySelectorAll('.js-booking'),
+    closeBooking = document.querySelector('.js-close-booking'),
+    closePopup = document.querySelectorAll('.js-close-popup'),
+    container = document.querySelector('.container'),
+    body = document.querySelector('body'),
+    modal = document.querySelector('.modal'),
+    popup = document.querySelector('.popup'),
+    modalSubmit = document.querySelector('.modal__button');
+
+  for ( let i = 0; i < button.length; i++ ) {
+    button[i].addEventListener('click', () => {
+      modal.classList.add('modal_active');
+      container.classList.add('container_blur');
+      body.classList.add('overflow-hidden');      
+    })
+  }
+
+  for (let i = 0; i < closePopup.length; i++) {
+    closePopup[i].addEventListener('click', () => popup.classList.remove('popup_active'))
+  }
+
+  closeBooking.addEventListener('click', () => {
+    modal.classList.remove('modal_active');
+    container.classList.remove('container_blur');
+    body.classList.remove('overflow-hidden');
+    popup.classList.remove('popup_active')   
+  });
+
+  modalSubmit.addEventListener('click', () => popup.classList.add('popup_active'))
+
+}());

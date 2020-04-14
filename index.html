@@ -216,7 +216,7 @@
                     <li class="card__text list__item card__list-item">Размеры (ШхГхВ) — 90х100х180 см</li>
                     <li class="card__text list__item card__list-item">Цена за сутки: 200₽</li>
                   </ul>
-                  <button class="rooms__button button button_orange" type="button" name="button">
+                  <button class="rooms__button button button_orange js-booking" type="button" name="button">
                     <span class="button__text">Забронировать</span>
                   </button>
                 </div>
@@ -234,7 +234,7 @@
                     <li class="card__text list__item card__list-item">Размеры (ШхГхВ) - 100х125х180 см</li>
                     <li class="card__text list__item card__list-item">Цена за сутки: 250₽</li>
                   </ul>
-                  <button class="rooms__button button button_orange" type="button" name="button">
+                  <button class="rooms__button button button_orange js-booking" type="button" name="button">
                     <span class="button__text">Забронировать</span>
                   </button>
                 </div>
@@ -252,7 +252,7 @@
                     <li class="card__text list__item card__list-item">Размеры (ШхГхВ) - 125х125х180 см</li>
                     <li class="card__text list__item card__list-item">Цена за сутки: 350₽</li>
                   </ul>
-                  <button class="rooms__button button button_orange" type="button" name="button">
+                  <button class="rooms__button button button_orange js-booking" type="button" name="button">
                     <span class="button__text">Забронировать</span>
                   </button>
                 </div>
@@ -437,7 +437,7 @@
     <!-- modal_active -->
     <div class="modal__booking">
       <div class="modal__body card">
-        <div class="modal__close"><img src="./img/svg/modal-close.svg" alt="Close"></div>
+        <div class="modal__close js-close-booking"><img src="./img/svg/modal-close.svg" alt="Close"></div>
         <h3 class="modal__title title">Забронировать номер</h3>
         <form class="modal__form">
           <input type="text" class="modal__input" placeholder="Ваше имя">
@@ -452,20 +452,20 @@
               <label class="modal__date-label">по <input type="date" class="modal__date-input modal__input"></label>
             </div>
           </div>
-
-          <button class="modal__button button button_orange"><span class="button__text">Отправить заявку</span></button>
         </form>
+
+        <button class="modal__button button button_orange"><span class="button__text">Отправить заявку</span></button>
       </div>
     </div>
     <div class="modal__popup popup">
       <!-- popup_active -->
       <div class="modal__body card">
-        <div class="modal__close"><img src="./img/svg/modal-close.svg" alt="Close"></div>
+        <div class="modal__close js-close-popup"><img src="./img/svg/modal-close.svg" alt="Close"></div>
         <h3 class="popup__title modal__title title">Спасибо за заявку!</h3>
         <p class="popup__text">
           Мы свяжемся с вами в ближайшее время
         </p>
-        <button class="popup__button button button_orange"><span class="button__text">Ок</span></button>
+        <button class="popup__button button button_orange js-close-popup"><span class="button__text">Ок</span></button>
 
       </div>
     </div>
