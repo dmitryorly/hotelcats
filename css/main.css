@@ -74,6 +74,11 @@ a {
   color: #1A212F;
 }
 
+.container_blur {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+
 .main {
   margin-top: 76px;
   overflow: hidden;
@@ -1699,7 +1704,7 @@ a {
 }
 
 .modal__container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999999;
@@ -1717,7 +1722,6 @@ a {
   height: 100%;
   width: 100%;
   padding: 70px 15px;
-  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .modal__body {

@@ -20,6 +20,12 @@ html{
     color: #1A212F;
   }
 
+.container{
+  &_blur{
+    filter: blur(8px);
+  }
+}
+
 .main{
   margin-top: 76px;
   overflow: hidden;
