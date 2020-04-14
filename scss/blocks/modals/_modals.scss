@@ -6,6 +6,10 @@
     visibility: visible;
   }
 
+  &__booking, &__popup{
+    margin-bottom: 50px;
+  }
+
   &__container{
     position: absolute;
     top: 0;
@@ -18,7 +22,7 @@
     justify-content: flex-start;
     height: 100%;
     width: 100%;
-    padding: 70px;
+    padding: 70px 15px;
 
     background-color: rgba(0, 0, 0, 0.35);
   }
@@ -30,7 +34,11 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 60px 30px;
-    margin-bottom: 50px;
+
+    @media screen and (max-width: 380px){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__close{
@@ -46,6 +54,9 @@
 
     font-size: 28px;
     line-height: 120%;
+    @media screen and (max-width: 568px) {
+      font-size: 24px
+    }
   }
 
   &__form{
@@ -68,16 +79,49 @@
     border: 1px solid #D7D7D7;
     border-radius: 25px;
 
-    &_date{
-      padding: 10px 20px;
-    }
-
     &::placeholder{
       color: #1A212F;
       opacity: 1;
     }
   }
-  
+
+  &__date{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &-text{
+      white-space: nowrap;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    &-fieldset{
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 360px) {
+        margin-bottom: 0;
+      }
+    }
+    &-label{
+      white-space: nowrap;
+    }
+    &-input{
+      margin: 0;
+      padding-right: 0;
+      padding-left: 20px;
+      max-width: 150px;
+
+      @media screen and (max-width: 360px) {
+        max-width: 110px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   &__button{
     max-width: 230px;
     width: 100%;
