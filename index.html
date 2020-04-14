@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body> <!-- class="overflow-hidden" -->
   <!-- HEADR START -->
   <header class="header">
 
@@ -430,25 +430,38 @@
   <!-- FOOTER END -->
 
   <!-- MODAL START -->
-  <div class="modal modal__container">
-    <div class="modal__body card">
-      <div class="modal__close"><img src="./img/svg/modal-close.svg" alt="Close"></div>
-      <h3 class="modal__title title">Забронировать номер</h3>
-      <form class="modal__form">
-        <input type="text" class="modal__input" placeholder="Ваше имя">
-        <input type="text" class="modal__input" placeholder="Имя Питомца">
-        <input type="tel" class="modal__input" placeholder="Телефон">
-        <input type="email" class="modal__input" placeholder="E-mail">
-        <p>Дата заезда
-          <label> c
-            <input type="date" class="modal__input modal__input_date" placeholder="26.01.2020">
-          </label>
-          <label> по
-            <input type="date" class="modal__input modal__input_date" placeholder="26.02.2020">
-          </label>
+  <div class="modal modal__container"> <!-- modal_active -->
+    <div class="modal__booking">
+      <div class="modal__body card">
+        <div class="modal__close"><img src="./img/svg/modal-close.svg" alt="Close"></div>
+        <h3 class="modal__title title">Забронировать номер</h3>
+        <form class="modal__form">
+          <input type="text" class="modal__input" placeholder="Ваше имя">
+          <input type="text" class="modal__input" placeholder="Имя Питомца">
+          <input type="tel" class="modal__input" placeholder="Телефон">
+          <input type="email" class="modal__input" placeholder="E-mail">
+          <p>Дата заезда
+            <label> c
+              <input type="date" class="modal__input modal__input_date" placeholder="26.01.2020">
+            </label>
+            <label> по
+              <input type="date" class="modal__input modal__input_date" placeholder="26.02.2020">
+            </label>
+          </p>
+          <button class="modal__button button button_orange"><span class="button__text">Отправить заявку</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="modal__popup popup"> <!-- popup__active -->
+      <div class="modal__body card">
+        <div class="modal__close"><img src="./img/svg/modal-close.svg" alt="Close"></div>
+        <h3 class="popup__title title">Спасибо за заявку!</h3>
+        <p class="popup__text">
+          Мы свяжемся с вами в ближайшее время
         </p>
-        <button class="modal__button button button_orange"><span class="button__text">Отправить заявку</span></button>
-      </form>
+        <button class="popup__button button button_orange"><span class="button__text">Ок</span></button>
+
+      </div>
     </div>
   </div>
   <!-- MODAL END -->

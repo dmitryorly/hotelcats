@@ -11,9 +11,14 @@
     top: 0;
     left: 0;
     z-index: 999999;
+    overflow-y: auto;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
     width: 100%;
+    padding: 70px;
 
     background-color: rgba(0, 0, 0, 0.35);
   }
@@ -25,12 +30,15 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 60px 30px;
+    margin-bottom: 50px;
   }
 
   &__close{
     position: absolute;
     right: 25px;
     top: 25px;
+
+    cursor: pointer;
   }
 
   &__title{
@@ -74,7 +82,27 @@
     max-width: 230px;
     width: 100%;
     align-self: center;
+    margin-top: 30px;
   }
-
 }
 
+.popup{
+  display: none;
+  visibility: hidden;
+  &_active{
+    display: block;
+    visibility: visible;
+  }
+  &__title{
+    margin-bottom: 25px;
+  }
+  &__text{
+    font-family: Lato;
+    line-height: 19px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  &__button{
+    margin-bottom: -20px;
+  }
+}
