@@ -4,8 +4,8 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 12px;
-
   }
+
   &__wrapper{
     padding: 0 15px;
   }
@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     
-    display: block;
+    display: none;
     visibility: hidden;
 
     width: 100vw;
@@ -28,15 +28,12 @@
     transition: all .3s;
 
     &_active{
-      
       @media screen and (max-width: 668px){
         display: block;
         visibility: visible;
   
         transform: translateX(0);
       }
-
-
     }
   }
   
@@ -84,5 +81,4 @@
       }
     }
   }
-
 }
