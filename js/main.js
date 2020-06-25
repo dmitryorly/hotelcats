@@ -3,28 +3,26 @@
   let burgerClose = document.querySelector('.mobile__close');
   let burgerOpen = document.querySelector('.header__burger');
   let menu = document.querySelector('.mobile__menu');
-  let menuItems = document.querySelectorAll(".js-scroll");
+  let menuItems = document.querySelectorAll(".js-scroll"); // Menu links
   let body = document.querySelector('body');
+
+  let hideMenu = () => {
+    body.classList.remove('overflow-hidden'); // Restore scroll
+    menu.classList.remove('mobile__menu_active'); // Hide menu
+  }
   
+  // Click on any link will close mobile menu
   for (let i = 0; i < menuItems.length; i++) {
-    menuItems[i].addEventListener('click', () => {
-    body.classList.remove('overflow-hidden');
-    menu.classList.remove('mobile__menu_active');
-    });
+    menuItems[i].addEventListener('click', hideMenu);
   }
 
-  burgerClose.addEventListener('click', () => {
-    menu.classList.remove('mobile__menu_active');
-    body.classList.remove('overflow-hidden');
-  })
+  burgerClose.addEventListener('click', hideMenu);
   
   burgerOpen.addEventListener('click', () => {
-    menu.classList.add('mobile__menu_active');
-    body.classList.add('overflow-hidden');
+    menu.classList.add('mobile__menu_active'); // Show menu
+    body.classList.add('overflow-hidden'); // Remove scroll
   });
-
-
-
+  
 }());
 
 //smooth scroll
@@ -71,7 +69,7 @@
 
 // modal windows
 (function () {
-  let button = document.querySelectorAll('.js-booking'),
+  let button = document.querySelectorAll('.js-booking'), // Trigger to open modal
     closeBooking = document.querySelector('.js-close-booking'),
     closePopup = document.querySelectorAll('.js-close-popup'),
     container = document.querySelector('.container'),
@@ -81,24 +79,25 @@
     modalSubmit = document.querySelector('.modal__button');
 
   for ( let i = 0; i < button.length; i++ ) {
+    // Add listener to each trigger
     button[i].addEventListener('click', () => {
-      modal.classList.add('modal_active');
-      container.classList.add('container_blur');
-      body.classList.add('overflow-hidden');      
+      modal.classList.add('modal_active'); // Open modal
+      container.classList.add('container_blur'); // Blur page
+      body.classList.add('overflow-hidden'); // Remove scroll 
     })
   }
 
   for (let i = 0; i < closePopup.length; i++) {
-    closePopup[i].addEventListener('click', () => popup.classList.remove('popup_active'))
+    closePopup[i].addEventListener('click', () => popup.classList.remove('popup_active')) // Hide popup
   }
 
   closeBooking.addEventListener('click', () => {
-    modal.classList.remove('modal_active');
-    container.classList.remove('container_blur');
-    body.classList.remove('overflow-hidden');
-    popup.classList.remove('popup_active')   
+    modal.classList.remove('modal_active'); // Hide modal
+    container.classList.remove('container_blur'); // Blur page
+    body.classList.remove('overflow-hidden'); // Restore scroll
+    popup.classList.remove('popup_active'); // Hide popup
   });
 
-  modalSubmit.addEventListener('click', () => popup.classList.add('popup_active'))
+  modalSubmit.addEventListener('click', () => popup.classList.add('popup_active')) // Show popup
 
 }());
