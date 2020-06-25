@@ -117,34 +117,34 @@
 
         <div class="catalog__row-1">
           <h2 class="title catalog__title">Наши номера</h2>
-          
+
           <div class="catalog__buttons-container">
             <button class="button filter__button"><img src="../img/svg/filter-icon.svg" alt=""> Фильтры</button>
-          <select class="catalog__sort select_no-js">
-            <option value="">По площади</option>
-            <option value="">По площади</option>
-            <option value="">По цене</option>
-            <option value="">По цене</option>
-          </select>
+            <select class="catalog__sort select_no-js">
+              <option value="">По площади</option>
+              <option value="">По площади</option>
+              <option value="">По цене</option>
+              <option value="">По цене</option>
+            </select>
 
-          <div class="select__container">
+            <div class="select__container">
 
-            <div class="select__option select__option_active"data-sort="increas-space">
-              <img src="img/svg/arrow-up.svg" alt="По возрастанию" class="select__icon">По площади 
+              <div class="select__option select__option_active" data-sort="increas-space">
+                <img src="img/svg/arrow-up.svg" alt="По возрастанию" class="select__icon">По площади
+              </div>
+              <div class="select__option" data-sort="decreas-space">
+                <img src="img/svg/arrow-down.svg" alt="По убыванию" class="select__icon">По площади
+              </div>
+              <div class="select__option" data-sort="increas-price">
+                <img src="img/svg/arrow-up.svg" alt="По возрастанию" class="select__icon">По цене
+              </div>
+              <div class="select__option" data-sort="decreas-price">
+                <img src="img/svg/arrow-down.svg" alt="По убыванию" class="select__icon">По цене
+              </div>
             </div>
-            <div class="select__option"data-sort="decreas-space">
-              <img src="img/svg/arrow-down.svg" alt="По убыванию" class="select__icon">По площади
-            </div>
-            <div class="select__option"data-sort="increas-price">
-              <img src="img/svg/arrow-up.svg" alt="По возрастанию" class="select__icon">По цене
-            </div>
-            <div class="select__option"data-sort="decreas-price">
-              <img src="img/svg/arrow-down.svg" alt="По убыванию" class="select__icon">По цене
-            </div>
+
           </div>
 
-          </div>
-          
 
         </div>
 
@@ -260,7 +260,7 @@
                   <img class="catalog__equip-icon " src="img/svg/catalog-equip-claw.svg" alt="Когтеточка"><span
                     class="tooltip">Когтеточка</span></span>
               </p>
-              <p class="catalog__card-text">Цена за сутки: <span class="room__price">200&#8381;</p>
+              <p class="catalog__card-text">Цена за сутки: <span class="room__price">200&#8381;</span></p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
@@ -288,7 +288,7 @@
                 </span>
 
               </p>
-              <p class="catalog__card-text">Цена за сутки: <span class="room__price">250&#8381;</p>
+              <p class="catalog__card-text">Цена за сутки: <span class="room__price">250&#8381;</span></p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
@@ -316,7 +316,7 @@
                 </span>
 
               </p>
-              <p class="catalog__card-text">Цена за сутки: <span class="room__price">350&#8381;</p>
+              <p class="catalog__card-text">Цена за сутки: <span class="room__price">350&#8381;</span></p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
@@ -349,7 +349,7 @@
                 </span>
               </p>
 
-              <p class="catalog__card-text">Цена за сутки: <span class="room__price">500&#8381;</p>
+              <p class="catalog__card-text">Цена за сутки: <span class="room__price">500&#8381;</span></p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
@@ -381,7 +381,7 @@
                   <span class="tooltip">Домик</span>
                 </span>
               </p>
-              <p class="catalog__card-text">Цена за сутки: <span class="room__price">600&#8381;</p>
+              <p class="catalog__card-text">Цена за сутки: <span class="room__price">600&#8381;</span></p>
               <button class="catalog__button button button_orange"><span
                   class="button__text">Забронировать</span></button>
             </div>
@@ -390,7 +390,6 @@
           <!-- CARDS END -->
 
         </div>
-      </div>
       </div>
 
     </section>
@@ -435,16 +434,10 @@
           </div>
 
           <div class="contacts__map">
-            <div style="position:relative;overflow:hidden;"><a
-                href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-                style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-                href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324539%2C59.938658&sll=30.315635%2C59.938951&sspn=0.986023%2C0.304917&utm_medium=mapframe&utm_source=maps&z=18"
-                style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
-                Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKaL7MYZ" width="798" height="580"
-                allowfullscreen="true" style="position:relative;"></iframe></div>
+            <iframe class="contacts-map"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Af73fc3cd69993da32800d10bf4ec7c8ce43bca3afe327aa864802cb4df1f0def&amp;source=constructor"></iframe>
           </div>
         </div>
-      </div>
       </div>
     </section>
     <!-- CONTACTS END -->
@@ -488,6 +481,46 @@
 
   </footer>
   <!-- FOOTER END -->
+
+    <!-- MODAL START -->
+    <div class="modal modal__container">
+      <!-- modal_active -->
+      <div class="modal__booking">
+        <div class="modal__body card">
+          <div class="modal__close js-close-booking"><img src="./img/svg/modal-close.svg" alt="Close"></div>
+          <h3 class="modal__title title">Забронировать номер</h3>
+          <form class="modal__form">
+            <input type="text" class="modal__input" placeholder="Ваше имя">
+            <input type="text" class="modal__input" placeholder="Имя Питомца">
+            <input type="tel" class="modal__input" placeholder="Телефон">
+            <input type="email" class="modal__input" placeholder="E-mail">
+  
+            <div class="modal__date">
+              <p class="modal__date-text">Дата заезда</p>
+              <div class="modal__date-fieldset">
+                <label class="modal__date-label">c <input type="text" class="modal__date-input modal__input" placeholder="дд.мм.гггг"></label>
+                <label class="modal__date-label">по <input type="text" class="modal__date-input modal__input" placeholder="дд.мм.гггг"></label>
+              </div>
+            </div>
+          </form>
+  
+          <button class="modal__button button button_orange"><span class="button__text">Отправить заявку</span></button>
+        </div>
+      </div>
+      <div class="modal__popup popup">
+        <!-- popup_active -->
+        <div class="modal__body card">
+          <div class="modal__close js-close-popup"><img src="./img/svg/modal-close.svg" alt="Close"></div>
+          <h3 class="popup__title modal__title title">Спасибо за заявку!</h3>
+          <p class="popup__text">
+            Мы свяжемся с вами в ближайшее время
+          </p>
+          <button class="popup__button button button_orange js-close-popup"><span class="button__text">Ок</span></button>
+  
+        </div>
+      </div>
+    </div>
+    <!-- MODAL END -->
 
   <!-- Select script -->
   <script src="scss/blocks/select/select.js"></script>

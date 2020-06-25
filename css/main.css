@@ -1012,7 +1012,7 @@ a {
 .about__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (33.3%);
+  -ms-grid-columns: (33.3%)[3];
       grid-template-columns: repeat(3, 33.3%);
   -webkit-column-gap: 10px;
           column-gap: 10px;
@@ -1021,7 +1021,7 @@ a {
 
 @media screen and (max-width: 960px) {
   .about__cards {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
@@ -1365,6 +1365,7 @@ a {
 .contacts-map {
   display: block;
   height: 100%;
+  width: 100%;
 }
 
 .social-link {
@@ -1458,7 +1459,7 @@ a {
   display: -ms-grid;
   display: grid;
   gap: 30px;
-  -ms-grid-columns: (2fr);
+  -ms-grid-columns: (2fr)[6];
       grid-template-columns: repeat(6, 2fr);
 }
 
